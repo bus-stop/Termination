@@ -1,0 +1,62 @@
+'context-menu':
+  '.termination .pio-terminal-status-icon': [
+    {label: 'Red', command: 'termination:status-red'},
+    {label: 'Orange', command: 'termination:status-orange'},
+    {label: 'Yellow', command: 'termination:status-yellow'},
+    {label: 'Green', command: 'termination:status-green'},
+    {label: 'Blue', command: 'termination:status-blue'},
+    {label: 'Purple', command: 'termination:status-purple'},
+    {label: 'Pink', command: 'termination:status-pink'},
+    {label: 'Cyan', command: 'termination:status-cyan'},
+    {label: 'Magenta', command: 'termination:status-magenta'},
+    {label: 'Default', command: 'termination:status-default'},
+    {type: 'separator'},
+    {label: 'Hide', command: 'termination:context-hide'},
+    {label: 'Rename', command: 'termination:context-rename'},
+    {label: 'Close', command: 'termination:context-close'}
+  ]
+  '.termination .terminal': [
+    {label: 'Copy', command: 'termination:copy'},
+    {label: 'Paste', command: 'termination:paste'},
+    {type: 'separator'},
+    {label: 'Hide', command: 'termination:hide'},
+    {label: 'Close', command: 'termination:close'}
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'termination'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'termination:toggle'
+        },
+        {
+          'label': 'New Terminal'
+          'command': 'termination:new'
+        },
+        {
+          'label': 'Previous Terminal'
+          'command': 'termination:prev'
+        },
+        {
+          'label': 'Next Terminal'
+          'command': 'termination:next'
+        },
+        {
+          'label': 'Toggle Fullscreen'
+          'command': 'termination:fullscreen'
+        },
+        {
+          'label': 'Close Terminal'
+          'command': 'termination:close'
+        },
+        {
+          'label': 'Close All Terminals'
+          'command': 'termination:close-all'
+        }
+      ]
+    ]
+  }
+]

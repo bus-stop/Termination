@@ -33,7 +33,7 @@ module.exports =
           default: true
         runInsertedText:
           title: 'Run Inserted Text'
-          description: 'Run text inserted via `platformio-ide-terminal:insert-text` as a command? **This will append an end-of-line character to input.**'
+          description: 'Run text inserted via `termination:insert-text` as a command? **This will append an end-of-line character to input.**'
           type: 'boolean'
           default: true
     core:
@@ -277,41 +277,41 @@ module.exports =
       properties:
         customText1:
           title: 'Custom text 1'
-          description: 'Text to paste when calling platformio-ide-terminal:insert-custom-text-1, $S is replaced by selection, $F is replaced by file name, $D is replaced by file directory, $L is replaced by line number of cursor, $$ is replaced by $'
+          description: 'Text to paste when calling termination:insert-custom-text-1, $S is replaced by selection, $F is replaced by file name, $D is replaced by file directory, $L is replaced by line number of cursor, $$ is replaced by $'
           type: 'string'
           default: ''
         customText2:
           title: 'Custom text 2'
-          description: 'Text to paste when calling platformio-ide-terminal:insert-custom-text-2'
+          description: 'Text to paste when calling termination:insert-custom-text-2'
           type: 'string'
           default: ''
         customText3:
           title: 'Custom text 3'
-          description: 'Text to paste when calling platformio-ide-terminal:insert-custom-text-3'
+          description: 'Text to paste when calling termination:insert-custom-text-3'
           type: 'string'
           default: ''
         customText4:
           title: 'Custom text 4'
-          description: 'Text to paste when calling platformio-ide-terminal:insert-custom-text-4'
+          description: 'Text to paste when calling termination:insert-custom-text-4'
           type: 'string'
           default: ''
         customText5:
           title: 'Custom text 5'
-          description: 'Text to paste when calling platformio-ide-terminal:insert-custom-text-5'
+          description: 'Text to paste when calling termination:insert-custom-text-5'
           type: 'string'
           default: ''
         customText6:
           title: 'Custom text 6'
-          description: 'Text to paste when calling platformio-ide-terminal:insert-custom-text-6'
+          description: 'Text to paste when calling termination:insert-custom-text-6'
           type: 'string'
           default: ''
         customText7:
           title: 'Custom text 7'
-          description: 'Text to paste when calling platformio-ide-terminal:insert-custom-text-7'
+          description: 'Text to paste when calling termination:insert-custom-text-7'
           type: 'string'
           default: ''
         customText8:
           title: 'Custom text 8'
-          description: 'Text to paste when calling platformio-ide-terminal:insert-custom-text-8'
+          description: 'Text to paste when calling termination:insert-custom-text-8'
           type: 'string'
           default: ''

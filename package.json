@@ -1,13 +1,14 @@
 {
-  "name": "platformio-ide-terminal",
-  "main": "./lib/platformio-ide-terminal",
-  "version": "2.2.0",
-  "description": "A terminal package for Atom, complete with themes, API and more for PlatformIO IDE. Fork of terminal-plus.",
+  "name": "Termination",
+  "main": "./lib/termination",
+  "version": "0.0.0",
+  "description": "A terminal package for Atom, complete with themes, API and more. Fork of platformio-ide-terminal.",
   "author": "Jeremy Ebneyamin",
   "keywords": [
     "PlatformIO",
     "terminal-plus",
     "terminal",
+    "term",
     "plus",
     "panel",
     "tty"
@@ -22,10 +23,16 @@
       "name": "Dmytro Kyrychuk",
       "email": "dmytro.kyrychuck@gmail.com",
       "url": "http://platformio.org"
+    },
+    {
+      "name": "Fred Barclay",
+      "email": "BugsAteFred@gmail.com",
+      "url": "https://github.com/Fred-Barclay"
     }
   ],
-  "homepage": "https://atom.io/packages/platformio-ide-terminal",
-  "repository": "https://github.com/platformio/platformio-atom-ide-terminal",
+  "homepage": "https://atom.io/packages/termination",
+  "repository": "https://github.com/Fred-Barclay/Termination",
+  "bugs": "https://github.com/Fred-Barclay/Termination/issues",
   "license": "MIT",
   "engines": {
     "atom": ">=1.2.0"

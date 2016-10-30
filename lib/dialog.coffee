@@ -3,7 +3,7 @@
 module.exports =
 class Dialog extends View
   @content: ({prompt} = {}) ->
-    @div class: 'platformio-ide-terminal-dialog', =>
+    @div class: 'termination-dialog', =>
       @label prompt, class: 'icon', outlet: 'promptText'
       @subview 'miniEditor', new TextEditorView(mini: true)
       @label 'Escape (Esc) to exit', style: 'float: left;'

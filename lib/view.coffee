@@ -24,7 +24,7 @@ class PlatformIOTerminalView extends View
   tabView: false
 
   @content: ->
-    @div class: 'platformio-ide-terminal terminal-view', outlet: 'platformIOTerminalView', =>
+    @div class: 'termination terminal-view', outlet: 'platformIOTerminalView', =>
       @div class: 'panel-divider', outlet: 'panelDivider'
       @div class: 'btn-toolbar', outlet:'toolbar', =>
         @button outlet: 'closeBtn', class: 'btn inline-block-tight right', click: 'destroy', =>
@@ -53,7 +53,7 @@ class PlatformIOTerminalView extends View
     @inputBtn.tooltip = atom.tooltips.add @inputBtn,
       title: 'Insert Text'
 
-    @prevHeight = atom.config.get('platformio-ide-terminal.style.defaultPanelHeight')
+    @prevHeight = atom.config.get('termination.style.defaultPanelHeight')
     if @prevHeight.indexOf('%') > 0
       percent = Math.abs(Math.min(parseFloat(@prevHeight) / 100.0, 1))
       bottomHeight = $('atom-panel.bottom').children(".terminal-view").height() or 0
@@ -61,10 +61,10 @@ class PlatformIOTerminalView extends View
     @xterm.height 0
 
     @setAnimationSpeed()
-    @subscriptions.add atom.config.onDidChange 'platformio-ide-terminal.style.animationSpeed', @setAnimationSpeed
+    @subscriptions.add atom.config.onDidChange 'termination.style.animationSpeed', @setAnimationSpeed
 
     override = (event) ->
-      return if event.originalEvent.dataTransfer.getData('platformio-ide-terminal') is 'true'
+      return if event.originalEvent.dataTransfer.getData('termination') is 'true'
       event.preventDefault()
       event.stopPropagation()
 
@@ -86,7 +86,7 @@ class PlatformIOTerminalView extends View
     @panel = atom.workspace.addBottomPanel(item: this, visible: false)
 
   setAnimationSpeed: =>
-    @animationSpeed = atom.config.get('platformio-ide-terminal.style.animationSpeed')
+    @animationSpeed = atom.config.get('termination.style.animationSpeed')
     @animationSpeed = 100 if @animationSpeed is 0
 
     @xterm.css 'transition', "height #{0.25 / @animationSpeed}s linear"
@@ -119,7 +119,7 @@ class PlatformIOTerminalView extends View
 
     @terminal = new Terminal {
       cursorBlink     : false
-      scrollback      : atom.config.get 'platformio-ide-terminal.core.scrollback'
+      scrollback      : atom.config.get 'termination.core.scrollback'
       cols, rows
     }
 
@@ -129,18 +129,18 @@ class PlatformIOTerminalView extends View
     @terminal.open @xterm.get(0)
 
   attachListeners: ->
-    @ptyProcess.on "platformio-ide-terminal:data", (data) =>
+    @ptyProcess.on "termination:data", (data) =>
       @terminal.write data
 
-    @ptyProcess.on "platformio-ide-terminal:exit", =>
-      @destroy() if atom.config.get('platformio-ide-terminal.toggles.autoClose')
+    @ptyProcess.on "termination:exit", =>
+      @destroy() if atom.config.get('termination.toggles.autoClose')
 
     @terminal.end = => @destroy()
 
     @terminal.on "data", (data) =>
       @input data
 
-    @ptyProcess.on "platformio-ide-terminal:title", (title) =>
+    @ptyProcess.on "termination:title", (title) =>
       @process = title
     @terminal.on "title", (title) =>
       @title = title
@@ -150,7 +150,7 @@ class PlatformIOTerminalView extends View
       @resizeTerminalToView()
 
       return unless @ptyProcess.childProcess?
-      autoRunCommand = atom.config.get('platformio-ide-terminal.core.autoRunCommand')
+      autoRunCommand = atom.config.get('termination.core.autoRunCommand')
       @input "#{autoRunCommand}#{os.EOL}" if autoRunCommand
       @input "#{command}#{os.EOL}" for command in @autoRun
 
@@ -267,7 +267,7 @@ class PlatformIOTerminalView extends View
     @ptyProcess.send {event: 'resize', rows, cols}
 
   applyStyle: ->
-    config = atom.config.get 'platformio-ide-terminal'
+    config = atom.config.get 'termination'
 
     @xterm.addClass config.style.theme
     @xterm.addClass 'cursor-blink' if config.toggles.cursorBlink
@@ -280,7 +280,7 @@ class PlatformIOTerminalView extends View
     @subscriptions.add atom.config.onDidChange 'editor.fontFamily', (event) =>
       editorFont = event.newValue
       @terminal.element.style.fontFamily = overrideFont or editorFont or defaultFont
-    @subscriptions.add atom.config.onDidChange 'platformio-ide-terminal.style.fontFamily', (event) =>
+    @subscriptions.add atom.config.onDidChange 'termination.style.fontFamily', (event) =>
       overrideFont = event.newValue
       @terminal.element.style.fontFamily = overrideFont or editorFont or defaultFont
 
@@ -292,7 +292,7 @@ class PlatformIOTerminalView extends View
       editorFontSize = event.newValue
       @terminal.element.style.fontSize = "#{overrideFontSize or editorFontSize}px"
       @resizeTerminalToView()
-    @subscriptions.add atom.config.onDidChange 'platformio-ide-terminal.style.fontSize', (event) =>
+    @subscriptions.add atom.config.onDidChange 'termination.style.fontSize', (event) =>
       overrideFontSize = event.newValue
       @terminal.element.style.fontSize = "#{overrideFontSize or editorFontSize}px"
       @resizeTerminalToView()
@@ -413,7 +413,7 @@ class PlatformIOTerminalView extends View
 
   insertSelection: (customText) ->
     return unless editor = atom.workspace.getActiveTextEditor()
-    runCommand = atom.config.get('platformio-ide-terminal.toggles.runInsertedText')
+    runCommand = atom.config.get('termination.toggles.runInsertedText')
     selectionText = ''
     if selection = editor.getSelectedText()
       @terminal.stopScrolling()
@@ -514,7 +514,7 @@ class PlatformIOTerminalView extends View
       lastOpenedView = null if lastOpenedView == this
 
   getTitle: ->
-    @statusIcon.getName() or "platformio-ide-terminal"
+    @statusIcon.getName() or "termination"
 
   getIconName: ->
     "terminal"

@@ -10,7 +10,7 @@ class InputDialog extends Dialog
       stayOpen: true
 
   onConfirm: (input) ->
-    if atom.config.get('platformio-ide-terminal.toggles.runInsertedText')
+    if atom.config.get('termination.toggles.runInsertedText')
       eol = os.EOL
     else
       eol = ''
