@@ -1,10 +1,11 @@
 {
-  "name": "Termination",
+  "name": "termination",
   "main": "./lib/termination",
   "version": "0.0.0",
   "description": "A terminal package for Atom, complete with themes, API and more. Fork of platformio-ide-terminal.",
   "author": "Jeremy Ebneyamin",
   "keywords": [
+    "termination",
     "PlatformIO",
     "terminal-plus",
     "terminal",
