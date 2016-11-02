@@ -1,3 +1,8 @@
+## 0.1.3 - Documentation update
+ * Changed links in README.md to point to our local files
+ * Improved documentation for keybindings (replaced incorrects 'ctrl'
+   with 'alt')
+
 ## 0.1.2
  * Added link to license in package.json
  * Renamed PlatfromIO changelog
