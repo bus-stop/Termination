@@ -1,8 +1,11 @@
 # Termination
+![AWIP](https://unpkg.com/vvwip/AWIP.svg)  
 A terminal package for Atom, complete with themes, API and more. Forked from platformio-ide-terminal.
 
-`terminal-plus` was a much-loved Atom terminal program but its maintenance has
-slowed down and bugs remain unfixed... `termination` is here to give you an
+[terminal-plus](https://github.com/jeremyramin/terminal-plus) was a much-loved
+Atom terminal program but its maintenance has
+slowed down and bugs remain unfixed...  
+`termination` is here to give you an
 almost-identical tool that is being actively developed!
 
 ![demo](https://github.com/Fred-Barclay/Termination/raw/master/resources/demo.gif)
