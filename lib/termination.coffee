@@ -25,7 +25,7 @@ module.exports =
           title: 'Close Terminal on Exit'
           description: 'Should the terminal close if the shell exits?'
           type: 'boolean'
-          default: false
+          default: true
         cursorBlink:
           title: 'Cursor Blink'
           description: 'Should the cursor blink when the terminal is active?'
