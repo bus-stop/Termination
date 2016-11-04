@@ -1,5 +1,8 @@
-## 0.1.4 (still in progress)
+## 0.2.0
+ * Completely replaced in-code references to PlatformIOTerminal
+ * Changed terminal to close by default if the shell exits
  * Reworked intro in README.md
+ * Coloured close icon "X" to red
 
 ## 0.1.3 - Documentation Update
  * Changed links in README.md to point to our local files

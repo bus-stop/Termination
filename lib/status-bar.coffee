@@ -1,7 +1,7 @@
 {CompositeDisposable} = require 'atom'
 {$, View} = require 'atom-space-pen-views'
 
-PlatformIOTerminalView = require './view'
+TerminationView = require './view'
 StatusIcon = require './status-icon'
 
 os = require 'os'
@@ -55,7 +55,7 @@ class StatusBar extends View
     @subscriptions.add atom.workspace.onDidChangeActivePaneItem (item) =>
       return unless item?
 
-      if item.constructor.name is "PlatformIOTerminalView"
+      if item.constructor.name is "TerminationView"
         setTimeout item.focus, 100
       else if item.constructor.name is "TextEditor"
         mapping = atom.config.get('termination.core.mapTerminalsTo')
@@ -92,7 +92,7 @@ class StatusBar extends View
     @statusContainer.on 'drop', @onDrop
 
     handleBlur = =>
-      if terminal = PlatformIOTerminalView.getFocusedTerminal()
+      if terminal = TerminationView.getFocusedTerminal()
         @returnFocus = @terminalViewForTerminal(terminal)
         terminal.blur()
 
@@ -140,7 +140,7 @@ class StatusBar extends View
 
       tabBar.on 'drop', (event) => @onDropTabBar(event, pane)
       tabBar.on 'dragstart', (event) ->
-        return unless event.target.item?.constructor.name is 'PlatformIOTerminalView'
+        return unless event.target.item?.constructor.name is 'TerminationView'
         event.originalEvent.dataTransfer.setData 'termination-tab', 'true'
       pane.onDidDestroy -> tabBar.off 'drop', @onDropTabBar
 
@@ -173,14 +173,14 @@ class StatusBar extends View
     args = shellArguments.split(/\s+/g).filter (arg) -> arg
 
     statusIcon = new StatusIcon()
-    platformIOTerminalView = new PlatformIOTerminalView(id, pwd, statusIcon, this, shell, args, autoRun)
-    statusIcon.initialize(platformIOTerminalView)
+    terminationView = new TerminationView(id, pwd, statusIcon, this, shell, args, autoRun)
+    statusIcon.initialize(terminationView)
 
-    platformIOTerminalView.attach()
+    terminationView.attach()
 
-    @terminalViews.push platformIOTerminalView
+    @terminalViews.push terminationView
     @statusContainer.append statusIcon
-    return platformIOTerminalView
+    return terminationView
 
   activeNextTerminalView: ->
     index = @indexOf(@activeTerminal)

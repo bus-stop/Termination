@@ -1,5 +1,5 @@
-PlatformIOTerminalView = require '../lib/termination-view'
+TerminationView = require '../lib/termination-view'
 
-describe "PlatformIOTerminalView", ->
+describe "TerminationView", ->
   it "has one valid test", ->
     expect("life").toBe "easy"

@@ -12,7 +12,7 @@ lastOpenedView = null
 lastActiveElement = null
 
 module.exports =
-class PlatformIOTerminalView extends View
+class TerminationView extends View
   animating: false
   id: ''
   maximized: false
@@ -24,7 +24,7 @@ class PlatformIOTerminalView extends View
   tabView: false
 
   @content: ->
-    @div class: 'termination terminal-view', outlet: 'platformIOTerminalView', =>
+    @div class: 'termination terminal-view', outlet: 'terminationView', =>
       @div class: 'panel-divider', outlet: 'panelDivider'
       @div class: 'btn-toolbar', outlet:'toolbar', =>
         @button outlet: 'closeBtn', class: 'btn inline-block-tight right', click: 'destroy', =>

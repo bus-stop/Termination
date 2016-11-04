@@ -1,11 +1,11 @@
-PlatformIOTerminal = require '../lib/termination'
+Termination = require '../lib/termination'
 
 # Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
 #
 # To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
 # or `fdescribe`). Remove the `f` to unfocus the block.
 
-describe "PlatformIOTerminal", ->
+describe "Termination", ->
   [workspaceElement, activationPromise] = []
 
   beforeEach ->
@@ -28,10 +28,10 @@ describe "PlatformIOTerminal", ->
       runs ->
         expect(workspaceElement.querySelector('.termination')).toExist()
 
-        platformIOTerminalElement = workspaceElement.querySelector('.termination')
-        expect(platformIOTerminalElement).toExist()
+        terminationElement = workspaceElement.querySelector('.termination')
+        expect(terminationElement).toExist()
 
-        statusBar = atom.workspace.panelForItem(platformIOTerminalElement)
+        statusBar = atom.workspace.panelForItem(terminationElement)
         expect(statusBar.isVisible()).toBe true
         atom.commands.dispatch workspaceElement, 'termination:toggle'
         expect(statusBar.isVisible()).toBe false
@@ -56,7 +56,7 @@ describe "PlatformIOTerminal", ->
 
       runs ->
         # Now we can test for view visibility
-        platformIOTerminalElement = workspaceElement.querySelector('.termination')
-        expect(platformIOTerminalElement).toBeVisible()
+        terminationElement = workspaceElement.querySelector('.termination')
+        expect(terminationElement).toBeVisible()
         atom.commands.dispatch workspaceElement, 'termination:toggle'
-        expect(platformIOTerminalElement).not.toBeVisible()
+        expect(terminationElement).not.toBeVisible()

@@ -6,6 +6,5 @@ Homogenise keybindings (don't mix ctrl and atl)
 
 Investigate "insert-selected-text" more thoroughly and integrate better.
 
-Switch "close" x to red?
 
 Fix the license (MIT) on the Atom Packages page
