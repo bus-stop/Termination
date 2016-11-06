@@ -1,5 +1,5 @@
 Copyright (c) 2015 Jeremy Ebneyamin  
-Copyright (C) 2016 Fred Barclay
+Copyright (C) 2016 Fred Barclay & Termination Authors
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
