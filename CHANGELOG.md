@@ -1,3 +1,7 @@
+## 0.2.2
+ * Cleanup! Removed testing code that was accidentally not removed earlier...
+ * Switched to the latest PlatformIO PTY.js fork
+
 ## 0.2.1
  * Added notes to CHANGELOG.platformio.md
  * Fixed incorrect keybinding documentation in README.md for closing terminals
