@@ -18,6 +18,7 @@
   '.termination .terminal': [
     {label: 'Copy', command: 'termination:copy'},
     {label: 'Paste', command: 'termination:paste'},
+    {label: 'Copy All to New File', command: 'termination:copy-all-to-new-file'},
     {type: 'separator'},
     {label: 'Hide', command: 'termination:hide'},
     {label: 'Close', command: 'termination:close'}
