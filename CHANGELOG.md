@@ -1,4 +1,4 @@
-## 0.2.2
+## 0.3.0
  * Cleanup! Removed testing code that was accidentally not removed earlier...
  * Switched to the latest PlatformIO PTY.js fork
 
