@@ -132,10 +132,10 @@ Or navigate to the install tab in Atom’s settings view, and search for `termin
 | termination:toggle | Toggle the last active terminal instance.<br>**Note:** This will create a new terminal if it needs to. | `` ctrl-` ``<br>(Control + Backtick) |
 | termination:prev | Switch to the terminal left of the last active terminal. | `alt-shift-j`<br>or<br>`cmd-shift-j` |
 | termination:next | Switch to the terminal right of the last active terminal. | `alt-shift-k`<br>or<br>`cmd-shift-k` |
-| termination:insert-selected-text | Run the selected text as a command in the active terminal. | `ctrl-enter` |
+| termination:insert-selected-text | Run the selected text as a command in the active terminal. | `alt-r`<br>or<br>`cmd-shift-r` |
 | termination:insert-text | Bring up an input box for using IME and special keys. | –––––––––––– |
 | termination:fullscreen | Toggle fullscreen for active terminal. | –––––––––––– |
-| termination:close | Close the active terminal. | `ctrl-shift-x`<br>or<br>`cmd-shift-x` |
+| termination:close | Close the active terminal. | `alt-shift-x`<br>or<br>`cmd-shift-x` |
 | termination:close-all | Close all terminals. | –––––––––––– |
 | termination:rename | Rename the active terminal. | –––––––––––– |
 
