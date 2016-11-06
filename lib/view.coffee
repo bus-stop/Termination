@@ -411,6 +411,15 @@ class TerminationView extends View
   paste: ->
     @input atom.clipboard.read()
 
+  copyAllToNewFile: ->
+    text = @terminal.lines.map (line) ->
+      line.map (cols) -> cols[1]
+      .join('').trimRight() + '\n'
+    .join('') + '\n'
+
+    atom.workspace.open().then (editor) ->
+      editor.insertText(text)
+
   insertSelection: (customText) ->
     return unless editor = atom.workspace.getActiveTextEditor()
     runCommand = atom.config.get('termination.toggles.runInsertedText')
