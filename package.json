@@ -30,7 +30,11 @@
       "name": "Fred Barclay",
       "email": "BugsAteFred@gmail.com",
       "url": "https://github.com/Fred-Barclay"
-    }
+    },
+    {
+      "name": "Ben Pritchard",
+      "url": "https://github.com/benpritchard"
+    },
   ],
   "homepage": "https://atom.io/packages/termination",
   "repository": "https://github.com/Fred-Barclay/Termination",
