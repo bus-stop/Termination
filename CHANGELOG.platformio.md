@@ -1,3 +1,14 @@
+# Termination note:  
+This is the changelog to terminal-plus and platformio-ide-terminal, from which
+termination was forked, provided for historical purposes. Please be
+aware that upon the initial fork from platformio-ide-terminal, the version
+numbers of termination were reset to start at 0.1.0. This means that termination
+0.1.0 was developed after, and uses code from, platformio-ide-terminal 2.2.0
+and could in a sense be considered platformio-ide-terminal 2.2.5.
+
+Termination owes a debt of gratitude to terminal-plus and
+platformio-ide-terminal, and to both developement teams.
+
 ## 2.2.0 - PlatformIO
 
 * Add Solarized-Dark theme

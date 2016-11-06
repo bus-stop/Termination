@@ -4,7 +4,6 @@ Add **option** for bottom panel to be an exact clone of terminal-plus
 
 Homogenise keybindings (don't mix ctrl and atl)
 
-Investigate "insert-selected-text" more thoroughly and integrate better.
-
-
 Fix the license (MIT) on the Atom Packages page
+
+cd /home/fred/Downloads
