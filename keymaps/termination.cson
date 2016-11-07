@@ -1,9 +1,9 @@
 '.platform-darwin atom-workspace':
-  'cmd-shift-t': 'termination:new'
-  'cmd-shift-j': 'termination:prev'
-  'cmd-shift-k': 'termination:next'
-  'cmd-shift-x': 'termination:close'
-  'cmd-shift-r': 'termination:insert-selected-text'
+  'alt-shift-t': 'termination:new'
+  'alt-shift-j': 'termination:prev'
+  'alt-shift-k': 'termination:next'
+  'alt-shift-x': 'termination:close'
+  'alt-shift-r': 'termination:insert-selected-text'
   'ctrl-`': 'termination:toggle'
 
 '.platform-linux atom-workspace, .platform-win32 atom-workspace':
