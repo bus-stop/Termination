@@ -14,7 +14,7 @@
   'alt-shift-x': 'termination:close'
   'alt-r': 'termination:insert-selected-text'
   'ctrl-`': 'termination:toggle'
-  'ctrl-alt-f': 'terminal-plus:focus'
+  'ctrl-alt-f': 'termination:focus'
 
 '.platform-darwin .termination .terminal':
   'cmd-c': 'termination:copy'
@@ -26,4 +26,4 @@
   'ctrl-shift-v': 'termination:paste'
   'ctrl-shift-c': 'termination:copy'
   'alt-ctrl-c': 'termination:copy-all-to-new-file'
-  'ctrl-alt-f': 'terminal-plus:focus'
+  'ctrl-alt-f': 'termination:focus'
