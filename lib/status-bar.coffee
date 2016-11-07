@@ -23,6 +23,7 @@ class StatusBar extends View
     @subscriptions = new CompositeDisposable()
 
     @subscriptions.add atom.commands.add 'atom-workspace',
+      'terminal-plus:focus': => @activeTerminal.focusTerminal()
       'termination:new': => @newTerminalView()
       'termination:toggle': => @toggle()
       'termination:next': =>
