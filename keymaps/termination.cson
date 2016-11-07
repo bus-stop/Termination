@@ -5,7 +5,7 @@
   'alt-shift-x': 'termination:close'
   'alt-shift-r': 'termination:insert-selected-text'
   'ctrl-`': 'termination:toggle'
-  'cmd-alt-t': 'termination:focus'
+  'cmd-alt-f': 'termination:focus'
 
 '.platform-linux atom-workspace, .platform-win32 atom-workspace':
   'alt-shift-t': 'termination:new'
@@ -14,16 +14,16 @@
   'alt-shift-x': 'termination:close'
   'alt-r': 'termination:insert-selected-text'
   'ctrl-`': 'termination:toggle'
-  'ctrl-alt-t': 'terminal-plus:focus'
+  'ctrl-alt-f': 'terminal-plus:focus'
 
 '.platform-darwin .termination .terminal':
   'cmd-c': 'termination:copy'
   'cmd-v': 'termination:paste'
   'alt-cmd-c': 'termination:copy-all-to-new-file'
-  'cmd-alt-t': 'termination:focus'
+  'cmd-alt-f': 'termination:focus'
 
 '.platform-linux .termination .terminal, .platform-win32 .termination .terminal':
   'ctrl-shift-v': 'termination:paste'
   'ctrl-shift-c': 'termination:copy'
   'alt-ctrl-c': 'termination:copy-all-to-new-file'
-  'ctrl-alt-t': 'terminal-plus:focus'
+  'ctrl-alt-f': 'terminal-plus:focus'
