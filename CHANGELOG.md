@@ -1,3 +1,12 @@
+## 0.3.1
+ * Added ability to export all lines in termination to a text file - Ben Pritchard
+ * Fixed conflicting termination/Atom keybindings for macOS
+   (https://github.com/jeremyramin/terminal-plus/pull/350)
+ * Changed green in Christmas theme
+ * Added GitHub theme
+ * Added keymap to focus terminal
+   (https://github.com/jeremyramin/terminal-plus/pull/138)
+
 ## 0.3.0
  * Cleanup! Removed testing code that was accidentally not removed earlier...
  * Switched to the latest PlatformIO PTY.js fork
