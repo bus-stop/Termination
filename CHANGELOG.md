@@ -1,3 +1,7 @@
+## 0.3.2
+ * Fixed #29 from upstream
+ (https://github.com/platformio/platformio-atom-ide-terminal/issues/29)
+
 ## 0.3.1
  * Added ability to export all lines in termination to a text file - Ben Pritchard
  * Fixed conflicting termination/Atom keybindings for macOS
