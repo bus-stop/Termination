@@ -138,7 +138,7 @@ Or navigate to the install tab in Atom’s settings view, and search for `termin
 | termination:close | Close the active terminal. | `alt-shift-x`<br>or<br>`cmd-shift-x` |
 | termination:close-all | Close all terminals. | –––––––––––– |
 | termination:rename | Rename the active terminal. | –––––––––––– |
-| termination:toggle | Focus an already-open terminal. | `ctrl-alt-f`<br>or<br>`cmd-alt-f` |
+| termination:focus | Focus an already-open terminal. | `ctrl-alt-f`<br>or<br>`cmd-alt-f` |
 
 ---
 A fork of [platformio-atom-ide-terminal](https://github.com/platformio/platformio-atom-ide-terminal).  
