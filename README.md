@@ -84,7 +84,7 @@ You can set the default working directory for new terminals. By default this wil
 Dropping a file on the terminal will insert the file path into the input. This works with external files, tabs from the Atom tab-view, and entries from the Atom tree-view.
 
 ### Insert Selected Text
-Insert and run selected text from your text editor by running the `termination:insert-selected-text` command (`ctrl-enter`).
+Insert and run selected text from your text editor by running the `termination:insert-selected-text` command (`alt-r` or `cmd-shift-r`).
 
 ![](https://github.com/Fred-Barclay/Termination/raw/master/resources/insert_selected_text.gif)
 
