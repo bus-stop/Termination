@@ -33,9 +33,17 @@ module.exports =
           default: true
         runInsertedText:
           title: 'Run Inserted Text'
-          description: 'Run text inserted via `termination:insert-text` as a command? **This will append an end-of-line character to input.**'
+          description: 'Run text inserted via `termination:insert-text` as a
+          command? **This will append an end-of-line character to input.**'
           type: 'boolean'
           default: true
+        cloneTerminalPlus:
+          title: 'Clone Terminal Plus'
+          description: 'Should there be a dedicated bottom panel for termination?
+          This will give termination a similar appearance to terminal-plus.
+          **Restart Required.**'
+          type: 'boolean'
+          default: false
     core:
       type: 'object'
       order: 2
@@ -47,13 +55,15 @@ module.exports =
           default: ''
         mapTerminalsTo:
           title: 'Map Terminals To'
-          description: 'Map terminals to each file or folder. Default is no action or mapping at all. **Restart required.**'
+          description: 'Map terminals to each file or folder. Default is no
+          action or mapping at all. **Restart required.**'
           type: 'string'
           default: 'None'
           enum: ['None', 'File', 'Folder']
         mapTerminalsToAutoOpen:
           title: 'Auto Open a New Terminal (For Terminal Mapping)'
-          description: 'Should a new terminal be opened for new items? **Note:** This works in conjunction with `Map Terminals To` above.'
+          description: 'Should a new terminal be opened for new items? **Note:**
+           This works in conjunction with `Map Terminals To` above.'
           type: 'boolean'
           default: false
         scrollback:
@@ -78,7 +88,8 @@ module.exports =
           default: ''
         workingDirectory:
           title: 'Working Directory'
-          description: 'Which directory should be the present working directory when a new terminal is made?'
+          description: 'Which directory should be the present working directory
+          when a new terminal is made?'
           type: 'string'
           default: 'Project'
           enum: ['Home', 'Project', 'Active File']
@@ -95,7 +106,8 @@ module.exports =
           maximum: '100'
         fontFamily:
           title: 'Font Family'
-          description: 'Override the terminal\'s default font family. **You must use a [monospaced font](https://en.wikipedia.org/wiki/List_of_typefaces#Monospace)!**'
+          description: 'Override the terminal\'s default font family. **You must
+           use a [monospaced font](https://en.wikipedia.org/wiki/List_of_typefaces#Monospace)!**'
           type: 'string'
           default: ''
         fontSize:
@@ -105,7 +117,8 @@ module.exports =
           default: ''
         defaultPanelHeight:
           title: 'Default Panel Height'
-          description: 'Default height of a terminal panel. **You may enter a value in px, em, or %.**'
+          description: 'Default height of a terminal panel. **You may enter a
+          value in px, em, or %.**'
           type: 'string'
           default: '300px'
         theme:
@@ -279,7 +292,9 @@ module.exports =
       properties:
         customText1:
           title: 'Custom text 1'
-          description: 'Text to paste when calling termination:insert-custom-text-1, $S is replaced by selection, $F is replaced by file name, $D is replaced by file directory, $L is replaced by line number of cursor, $$ is replaced by $'
+          description: 'Text to paste when calling termination:insert-custom-text-1,
+          $S is replaced by selection, $F is replaced by file name, $D is replaced
+          by file directory, $L is replaced by line number of cursor, $$ is replaced by $'
           type: 'string'
           default: ''
         customText2:

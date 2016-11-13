@@ -1,7 +1,5 @@
 Add our own GIFs to the demo in README.md (partly implemented)
 
-Add **option** for bottom panel to be an exact clone of terminal-plus
-
 Homogenise keybindings (don't mix ctrl and atl)
 
 Fix the license (MIT) on the Atom Packages page

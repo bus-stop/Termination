@@ -113,7 +113,10 @@ class StatusBar extends View
     @subscriptions.add dispose: ->
       window.removeEventListener 'focus', handleFocus
 
-    @attach()
+    if atom.config.get('termination.toggles.cloneTerminalPlus')
+        @attach_terminal_plus_style()
+    else
+        @attach_default_style()
 
   registerContextMenu: ->
     @subscriptions.add atom.commands.add '.termination.status-bar',
@@ -269,7 +272,10 @@ class StatusBar extends View
     @activeTerminal = @createTerminalView()
     @activeTerminal.toggle()
 
-  attach: ->
+  attach_terminal_plus_style: ->
+      atom.workspace.addBottomPanel(item: this, priority: 100)
+
+  attach_default_style: ->
     @statusBarProvider.addLeftTile(item: this, priority: -93)
 
   destroyActiveTerm: ->
