@@ -1,3 +1,7 @@
+## 0.3.3
+ * Corrected typos in README.md
+ * Added option to emulate the appearance of terminal-plus
+
 ## 0.3.2
  * Fixed #29 from upstream
  (https://github.com/platformio/platformio-atom-ide-terminal/issues/29)
