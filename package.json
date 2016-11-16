@@ -45,7 +45,7 @@
   "dependencies": {
     "atom-space-pen-views": "^2.1.0",
     "pty.js": "https://github.com/platformio/pty.js/tarball/prebuilt",
-    "term.js": "https://github.com/sourcelair/xterm.js/tarball/master",
+    "term.js": "https://github.com/jeremyramin/term.js/tarball/master",
     "underscore": "^1.8.3"
   },
   "consumedServices": {
