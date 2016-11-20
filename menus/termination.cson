@@ -1,5 +1,5 @@
 'context-menu':
-  '.termination .pio-terminal-status-icon': [
+  '.termination .termination-status-icon': [
     {label: 'Red', command: 'termination:status-red'},
     {label: 'Orange', command: 'termination:status-orange'},
     {label: 'Yellow', command: 'termination:status-yellow'},
