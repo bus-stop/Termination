@@ -1,3 +1,8 @@
+## 0.3.4
+ * Removed pio-terminal-status-icon reference (fixes #13)
+ * Adopted styles/termination.less from PlatformIO in place of previous from
+   terminal-plus
+
 ## 0.3.3
  * Corrected typos in README.md
  * Added option to emulate the appearance of terminal-plus
