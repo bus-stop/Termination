@@ -2,7 +2,6 @@
   "name": "termination",
   "main": "./lib/termination",
   "version": "0.3.3",
-  "license": "MIT",
   "description": "A terminal package for Atom, complete with themes, API and more. Fork of platformio-ide-terminal.",
   "author": "Jeremy Ebneyamin",
   "keywords": [
@@ -39,6 +38,7 @@
   "homepage": "https://atom.io/packages/termination",
   "repository": "https://github.com/Fred-Barclay/Termination",
   "bugs": "https://github.com/Fred-Barclay/Termination/issues",
+  "license": "MIT",
   "engines": {
     "atom": ">=1.2.0"
   },
