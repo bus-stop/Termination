@@ -134,7 +134,7 @@ Or navigate to the install tab in Atom’s settings view, and search for `termin
 | termination:next | Switch to the terminal right of the last active terminal. | `alt-shift-k`<br>or<br>`cmd-shift-k` |
 | termination:insert-selected-text | Run the selected text as a command in the active terminal. | `alt-r`<br>or<br>`cmd-shift-r` |
 | termination:insert-text | Bring up an input box for using IME and special keys. | –––––––––––– |
-| termination:fullscreen | Toggle fullscreen for active terminal. | –––––––––––– |
+| termination:fullscreen | Toggle fullscreen for active terminal. | `alt-shift-F` |
 | termination:close | Close the active terminal. | `alt-shift-x`<br>or<br>`cmd-shift-x` |
 | termination:close-all | Close all terminals. | –––––––––––– |
 | termination:rename | Rename the active terminal. | –––––––––––– |

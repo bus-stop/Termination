@@ -6,6 +6,7 @@
   'alt-shift-r': 'termination:insert-selected-text'
   'ctrl-`': 'termination:toggle'
   'cmd-alt-f': 'termination:focus'
+  'alt-shift-F': 'termination:fullscreen'
 
 '.platform-linux atom-workspace, .platform-win32 atom-workspace':
   'alt-shift-t': 'termination:new'
@@ -15,6 +16,7 @@
   'alt-r': 'termination:insert-selected-text'
   'ctrl-`': 'termination:toggle'
   'ctrl-alt-f': 'termination:focus'
+  'alt-shift-F': 'termination:fullscreen'
 
 '.platform-darwin .termination .terminal':
   'cmd-c': 'termination:copy'
