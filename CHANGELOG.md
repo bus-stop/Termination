@@ -1,6 +1,7 @@
-## 0.3.5
+## 0.3.5 (development)
  * Termination now emulates the appearance of terminal-plus by default
- 
+ * spec/ cleanup
+
 ## 0.3.4
  * Removed pio-terminal-status-icon reference (fixes #13)
  * Adopted styles/termination.less from PlatformIO in place of previous from
