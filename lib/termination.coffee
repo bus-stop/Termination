@@ -43,7 +43,7 @@ module.exports =
           This will give termination a similar appearance to terminal-plus.
           **Restart Required.**'
           type: 'boolean'
-          default: false
+          default: true
     core:
       type: 'object'
       order: 2
