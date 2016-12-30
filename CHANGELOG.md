@@ -1,6 +1,8 @@
 ## 0.3.5 (development)
  * Termination now emulates the appearance of terminal-plus by default
  * spec/ cleanup
+ * Added keybinding to maximise termination
+ * Removed deprecated enviromental variable 'ATOM_SHELL_INTERNAL_RUN_AS_NODE'
 
 ## 0.3.4
  * Removed pio-terminal-status-icon reference (fixes #13)
