@@ -1,4 +1,4 @@
-## 0.3.5 (development)
+## 0.3.5
  * Termination now emulates the appearance of terminal-plus by default
  * spec/ cleanup
  * Added keybinding to maximise termination

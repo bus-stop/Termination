@@ -38,7 +38,7 @@ module.exports =
           type: 'boolean'
           default: true
         cloneTerminalPlus:
-          title: 'Clone Terminal Plus'
+          title: 'Clone Terminal-Plus'
           description: 'Should there be a dedicated bottom panel for termination?
           This will give termination a similar appearance to terminal-plus.
           **Restart Required.**'
