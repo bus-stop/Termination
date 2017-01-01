@@ -33,6 +33,11 @@
     {
       "name": "Ben Pritchard",
       "url": "https://github.com/benpritchard"
+    },
+    {
+      "name": "Peter Benjamin",
+      "email": "petermbenjamin@gmail.com",
+      "url": "https://github.com/pmbenjamin"
     }
   ],
   "homepage": "https://atom.io/packages/termination",
