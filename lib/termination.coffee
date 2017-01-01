@@ -143,7 +143,8 @@ module.exports =
             'solid-colors',
             'dracula',
             'Christmas',
-            'github'
+            'github',
+            'one-dark'
           ]
     ansiColors:
       type: 'object'
