@@ -1,6 +1,7 @@
 ## 0.3.6 (development)
  * Renamed 'default style' to 'classic style' in lib/status-bar.coffee
  * Added One Dark theme - pmbenjamin
+ * Changed `command` to `commands` in termination.coffee for upstream compatibility
 
 ## 0.3.5
  * Termination now emulates the appearance of terminal-plus by default
