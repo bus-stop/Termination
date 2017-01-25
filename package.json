@@ -38,6 +38,10 @@
       "name": "Peter Benjamin",
       "email": "petermbenjamin@gmail.com",
       "url": "https://github.com/pmbenjamin"
+    },
+    {
+      "name": "David Klanac",
+      "url": "https://github.com/dklanac"
     }
   ],
   "homepage": "https://atom.io/packages/termination",
