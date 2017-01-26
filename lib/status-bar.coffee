@@ -73,7 +73,7 @@ class StatusBar extends View
         prevTerminal = @getActiveTerminalView()
         if prevTerminal != nextTerminal
           if not nextTerminal?
-            if atom.config.get('platformio-ide-terminal.core.mapTerminalsToAutoOpen')
+            if atom.config.get('termination.core.mapTerminalsToAutoOpen')
               nextTerminal = @createTerminalView()
           else
             @setActiveTerminalView(nextTerminal)
