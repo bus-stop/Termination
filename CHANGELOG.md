@@ -3,6 +3,7 @@
  * Added One Dark theme - pmbenjamin
  * Changed `command` to `commands` in termination.coffee for upstream compatibility
  * The active terminal icon is now underlined - David Klanac
+ * Fixed 'Argument to path.dirname must be a string' deprecation - Ben Phelps
 
 ## 0.3.5
  * Termination now emulates the appearance of terminal-plus by default
