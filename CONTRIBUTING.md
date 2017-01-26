@@ -18,7 +18,7 @@ still will be there next time you might need it. :-)
  try to translate, but remember that we may not be able to translate correctly.
 
  * The following information is **essential**:
- 	* Version of Atom
+	* Version of Atom
  	* Version of Termination
  	* Operating System
  	* Any debug information
@@ -43,9 +43,9 @@ still will be there next time you might need it. :-)
  * Harsh words won't help your situation. What's worse, your complaint
   will (very likely) be **closed**. :fearful:
 
- * While it's good to get bugs fixed for Atom Beta, our primary focus is on the
- stable branch of Atom. We don't release any changes for Atom Beta that
- cause a regression for our users on Atom Stable.  
+ * It's awesome to get bug reports for Atom Beta! We get extra time for fixing...
+ However, our primary focus is the stable branch of Atom. We don't release any
+ changes for Atom Beta that cause a regression for our users on Atom Stable.
  Please report Atom Beta bugs, but be prepared for them to not be fixed
  until the next release of Atom Stable. :smile:
 
