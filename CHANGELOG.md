@@ -1,4 +1,4 @@
-## 0.3.6 (development)
+## 0.3.6
  * Renamed 'default style' to 'classic style' in lib/status-bar.coffee
  * Added One Dark theme - pmbenjamin
  * Changed `command` to `commands` in termination.coffee for upstream compatibility
