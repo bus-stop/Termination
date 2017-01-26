@@ -1,7 +1,7 @@
 {
   "name": "termination",
   "main": "./lib/termination",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "A terminal package for Atom, complete with themes, API and more. Fork of platformio-ide-terminal.",
   "author": "Jeremy Ebneyamin",
   "keywords": [
@@ -47,7 +47,7 @@
       "name": "Ben Phelps",
       "email": "ben@phelps.io",
       "url": "https://github.com/benphelps"
-	}
+    }
   ],
   "homepage": "https://atom.io/packages/termination",
   "repository": "https://github.com/Fred-Barclay/Termination",
