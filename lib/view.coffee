@@ -272,6 +272,8 @@ class TerminationView extends View
     @xterm.addClass config.style.theme
     @xterm.addClass 'cursor-blink' if config.toggles.cursorBlink
 
+    ansiColors = require('./themes/' + config.style.theme)
+
     editorFont = atom.config.get('editor.fontFamily')
     defaultFont = "Menlo, Consolas, 'DejaVu Sans Mono', monospace"
     overrideFont = config.style.fontFamily
@@ -299,25 +301,25 @@ class TerminationView extends View
 
     # first 8 colors i.e. 'dark' colors
     @terminal.colors[0..7] = [
-      config.ansiColors.normal.black.toHexString()
-      config.ansiColors.normal.red.toHexString()
-      config.ansiColors.normal.green.toHexString()
-      config.ansiColors.normal.yellow.toHexString()
-      config.ansiColors.normal.blue.toHexString()
-      config.ansiColors.normal.magenta.toHexString()
-      config.ansiColors.normal.cyan.toHexString()
-      config.ansiColors.normal.white.toHexString()
+      ansiColors.normal.black
+      ansiColors.normal.red
+      ansiColors.normal.green
+      ansiColors.normal.yellow
+      ansiColors.normal.blue
+      ansiColors.normal.magenta
+      ansiColors.normal.cyan
+      ansiColors.normal.white
     ]
     # 'bright' colors
     @terminal.colors[8..15] = [
-      config.ansiColors.zBright.brightBlack.toHexString()
-      config.ansiColors.zBright.brightRed.toHexString()
-      config.ansiColors.zBright.brightGreen.toHexString()
-      config.ansiColors.zBright.brightYellow.toHexString()
-      config.ansiColors.zBright.brightBlue.toHexString()
-      config.ansiColors.zBright.brightMagenta.toHexString()
-      config.ansiColors.zBright.brightCyan.toHexString()
-      config.ansiColors.zBright.brightWhite.toHexString()
+      ansiColors.bright.black
+      ansiColors.bright.red
+      ansiColors.bright.green
+      ansiColors.bright.yellow
+      ansiColors.bright.blue
+      ansiColors.bright.magenta
+      ansiColors.bright.cyan
+      ansiColors.bright.white
     ]
 
   attachWindowEvents: ->
