@@ -2,6 +2,4 @@ Add our own GIFs to the demo in README.md (partly implemented)
 
 Homogenise keybindings (don't mix ctrl and atl)
 
-Fix the license (MIT) on the Atom Packages page
-
 Explain in README.md the differences between upstream and us
