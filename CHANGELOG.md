@@ -1,3 +1,6 @@
+## 0.3.7
+ * Fixed pane.addItem deprecation in lib/status-bar.coffee - Ben Phelps
+
 ## 0.3.6
  * Renamed 'default style' to 'classic style' in lib/status-bar.coffee
  * Added One Dark theme - pmbenjamin
