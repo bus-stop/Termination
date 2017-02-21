@@ -3,3 +3,5 @@ Add our own GIFs to the demo in README.md (partly implemented)
 Homogenise keybindings (don't mix ctrl and atl)
 
 Explain in README.md the differences between upstream and us
+
+Split termination window to a new pane on left or right
