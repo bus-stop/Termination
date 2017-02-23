@@ -1,5 +1,6 @@
 ## 0.3.8 (development)
  * New option: Copy text to clipboard on selection (enabled by default) - upstream from PIO and Barbayar
+ * Added fallback shell when process.env.SHELL is not defined for macOS/Linux users - thanks to @isacc-webb
 
 ## 0.3.7
  * Fixed pane.addItem deprecation in lib/status-bar.coffee - Ben Phelps
