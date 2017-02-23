@@ -1,4 +1,4 @@
-## 0.3.8 (development)
+## 0.4.0
  * New option: Copy text to clipboard on selection (enabled by default) - upstream from PIO and Barbayar
  * Added fallback shell when process.env.SHELL is not defined for macOS/Linux users - thanks to @isacc-webb
 
