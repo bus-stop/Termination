@@ -1,3 +1,6 @@
+## 0.3.8 (development)
+ * New option: Copy text to clipboard on selection (enabled by default) - upstream from PIO and Barbayar
+
 ## 0.3.7
  * Fixed pane.addItem deprecation in lib/status-bar.coffee - Ben Phelps
 

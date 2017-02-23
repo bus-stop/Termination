@@ -37,6 +37,11 @@ module.exports =
           command? **This will append an end-of-line character to input.**'
           type: 'boolean'
           default: true
+        selectToCopy:
+           title: 'Select To Copy'
+           description: 'Copies text to clipboard when selection happens.'
+           type: 'boolean'
+           default: true
         cloneTerminalPlus:
           title: 'Clone Terminal-Plus'
           description: 'Should there be a dedicated bottom panel for termination?
