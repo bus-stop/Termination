@@ -47,6 +47,10 @@
       "name": "Ben Phelps",
       "email": "ben@phelps.io",
       "url": "https://github.com/benphelps"
+    },
+    {
+      "name": "Yianni Kostantinidis",
+      "url": "http://yianni.codes/"
     }
   ],
   "homepage": "https://atom.io/packages/termination",

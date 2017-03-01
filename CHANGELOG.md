@@ -1,3 +1,7 @@
+## 0.5.0
+ * Added `ELECTRON_RUN_AS_NODE` env variable to replace deprecated (and previously removed) variable. Should solve problems running `atom`, `electron`, `node`, and `npm` from inside Termination.
+ Credits to @Naki21 (Yianni Kostantinidis)
+
 ## 0.4.0
  * New option: Copy text to clipboard on selection (enabled by default) - upstream from PIO and Barbayar
  * Added fallback shell when process.env.SHELL is not defined for macOS/Linux users - thanks to @isacc-webb

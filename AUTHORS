@@ -15,3 +15,6 @@ David Klanac (https://github.com/dklanac)
 Ben Phelps (https://github.com/benphelps)
  * Fixed deprecation warning
  * Fixed pane.addItem deprecation
+
+Yiannin Kostantinidis (https://github.com/Naki21)
+ * Found fix for termination failing to run `atom`, `electron`, and `node` commands properly
