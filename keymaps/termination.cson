@@ -22,10 +22,8 @@
   'cmd-c': 'termination:copy'
   'cmd-v': 'termination:paste'
   'alt-cmd-c': 'termination:copy-all-to-new-file'
-  'cmd-alt-f': 'termination:focus'
 
 '.platform-linux .termination .terminal, .platform-win32 .termination .terminal':
   'ctrl-shift-v': 'termination:paste'
   'ctrl-shift-c': 'termination:copy'
   'alt-ctrl-c': 'termination:copy-all-to-new-file'
-  'ctrl-alt-f': 'termination:focus'

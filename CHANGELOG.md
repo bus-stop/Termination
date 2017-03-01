@@ -1,3 +1,6 @@
+## 0.5.1 (development)
+ * Removed unnecessary keybindings for termination:focus
+
 ## 0.5.0
  * Added `ELECTRON_RUN_AS_NODE` env variable to replace deprecated (and previously removed) variable. Should solve problems running `atom`, `electron`, `node`, and `npm` from inside Termination.
  Credits to @Naki21 (Yianni Kostantinidis)
