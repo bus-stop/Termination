@@ -51,6 +51,11 @@
     {
       "name": "Yianni Kostantinidis",
       "url": "http://yianni.codes/"
+     },
+    {
+      "name": "Guten Ye",
+      "email": "guten@guten.me",
+      "url": "http://guten.me/"
     }
   ],
   "homepage": "https://atom.io/packages/termination",

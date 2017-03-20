@@ -133,6 +133,10 @@ Or navigate to the install tab in Atom’s settings view, and search for `termin
 | termination:prev | Switch to the terminal left of the last active terminal. | `alt-shift-j`<br>or<br>`cmd-shift-j` |
 | termination:next | Switch to the terminal right of the last active terminal. | `alt-shift-k`<br>or<br>`cmd-shift-k` |
 | termination:insert-selected-text | Run the selected text as a command in the active terminal. | `alt-r`<br>or<br>`cmd-shift-r` |
+| termination:active-1 | Switch to the first terminal window. | `alt-shift-1` |
+| termination:active-2 | Switch to the second terminal window. | `alt-shift-2` |
+| termination:active-3 | Switch to the third terminal window. | `alt-shift-3` |
+| termination:active-4 | Switch to the fourth terminal window. | `alt-shift-4` |
 | termination:insert-text | Bring up an input box for using IME and special keys. | –––––––––––– |
 | termination:fullscreen | Toggle fullscreen for active terminal. | `alt-shift-F` |
 | termination:close | Close the active terminal. | `alt-shift-x`<br>or<br>`cmd-shift-x` |

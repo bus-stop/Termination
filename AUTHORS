@@ -18,3 +18,6 @@ Ben Phelps (https://github.com/benphelps)
 
 Yiannin Kostantinidis (https://github.com/Naki21)
  * Found fix for termination failing to run `atom`, `electron`, and `node` commands properly
+
+Guten Ye (https://github.com/gutenye)
+ * Added keyboard shortcut to open/switch between up to four open terminals
