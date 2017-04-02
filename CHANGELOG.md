@@ -1,6 +1,7 @@
 ## 0.5.1 (development)
  * Removed unnecessary keybindings for termination:focus
  * Added keyboard shortcut to open/switch between up to four open terminals - @gutenye (Guten Ye)
+ * Merged #24 from @hanibash (Hani Sharabash). Themes are in charge of setting ANSI colours.
 
 ## 0.5.0
  * Added `ELECTRON_RUN_AS_NODE` env variable to replace deprecated (and previously removed) variable. Should solve problems running `atom`, `electron`, `node`, and `npm` from inside Termination.

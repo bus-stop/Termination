@@ -134,7 +134,7 @@ module.exports =
           enum: [
             'standard',
             'inverse',
-            'lib',
+            'linux',
             'grass',
             'homebrew',
             'man-page',

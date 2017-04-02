@@ -1,4 +1,4 @@
-# List of authors who have contributed to termination
+# List of authors who have contributed to termination (in chronological order of first commit):
 
 Fred Barclay (BugsAteFred@gmail.com)
  * Termination maintainer
@@ -21,3 +21,6 @@ Yiannin Kostantinidis (https://github.com/Naki21)
 
 Guten Ye (https://github.com/gutenye)
  * Added keyboard shortcut to open/switch between up to four open terminals
+
+Hani Sharabash (https://github.com/hanibash)
+ * Themes now set ANSI colours

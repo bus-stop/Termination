@@ -56,7 +56,11 @@
       "name": "Guten Ye",
       "email": "guten@guten.me",
       "url": "http://guten.me/"
-    }
+    },
+    {
+     "name": "Hani Sharabash",
+     "url": "https://github.com/hanibash"
+ }
   ],
   "homepage": "https://atom.io/packages/termination",
   "repository": "https://github.com/Fred-Barclay/Termination",
