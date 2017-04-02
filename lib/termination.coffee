@@ -133,15 +133,22 @@ module.exports =
           default: 'standard'
           enum: [
             'standard',
+            'inverse',
+            'lib',
             'grass',
             'homebrew',
+            'man-page',
+            'novel',
             'ocean',
             'pro',
+            'red',
             'red-sands',
             'silver-aerogel',
             'solarized-dark',
             'solid-colors',
             'dracula',
+            'Christmas',
+            'github',
             'one-dark',
             'one-light'
           ]
