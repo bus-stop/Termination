@@ -134,7 +134,7 @@ module.exports =
           enum: [
             'standard',
             'inverse',
-            'linux',
+            'lib',
             'grass',
             'homebrew',
             'man-page',
@@ -149,100 +149,9 @@ module.exports =
             'dracula',
             'Christmas',
             'github',
-            'one-dark'
+            'one-dark',
+            'one-light'
           ]
-    ansiColors:
-      type: 'object'
-      order: 4
-      properties:
-        normal:
-          type: 'object'
-          order: 1
-          properties:
-            black:
-              title: 'Black'
-              description: 'Black color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#000000'
-            red:
-              title: 'Red'
-              description: 'Red color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#CD0000'
-            green:
-              title: 'Green'
-              description: 'Green color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#00CD00'
-            yellow:
-              title: 'Yellow'
-              description: 'Yellow color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#CDCD00'
-            blue:
-              title: 'Blue'
-              description: 'Blue color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#0000CD'
-            magenta:
-              title: 'Magenta'
-              description: 'Magenta color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#CD00CD'
-            cyan:
-              title: 'Cyan'
-              description: 'Cyan color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#00CDCD'
-            white:
-              title: 'White'
-              description: 'White color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#E5E5E5'
-        zBright:
-          type: 'object'
-          order: 2
-          properties:
-            brightBlack:
-              title: 'Bright Black'
-              description: 'Bright black color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#7F7F7F'
-            brightRed:
-              title: 'Bright Red'
-              description: 'Bright red color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#FF0000'
-            brightGreen:
-              title: 'Bright Green'
-              description: 'Bright green color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#00FF00'
-            brightYellow:
-              title: 'Bright Yellow'
-              description: 'Bright yellow color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#FFFF00'
-            brightBlue:
-              title: 'Bright Blue'
-              description: 'Bright blue color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#0000FF'
-            brightMagenta:
-              title: 'Bright Magenta'
-              description: 'Bright magenta color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#FF00FF'
-            brightCyan:
-              title: 'Bright Cyan'
-              description: 'Bright cyan color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#00FFFF'
-            brightWhite:
-              title: 'Bright White'
-              description: 'Bright white color used for terminal ANSI color set.'
-              type: 'color'
-              default: '#FFFFFF'
     iconColors:
       type: 'object'
       order: 5
