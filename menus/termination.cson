@@ -27,7 +27,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'termination'
+      'label': 'Termination'
       'submenu': [
         {
           'label': 'Toggle'
@@ -44,6 +44,10 @@
         {
           'label': 'Next Terminal'
           'command': 'termination:next'
+        },
+        {
+          'label': 'Focus Terminal'
+          'command': 'termination:focus'
         },
         {
           'label': 'Toggle Fullscreen'

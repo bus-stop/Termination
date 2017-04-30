@@ -23,7 +23,7 @@ class StatusBar extends View
     @subscriptions = new CompositeDisposable()
 
     @subscriptions.add atom.commands.add 'atom-workspace',
-      'termination:focus': => @activeTerminal.focusTerminal()
+      'termination:focus': => @focusTerminal()
       'termination:new': => @newTerminalView()
       'termination:toggle': => @toggle()
       'termination:next': =>
@@ -233,6 +233,15 @@ class StatusBar extends View
 
   getActiveTerminalView: ->
     return @activeTerminal
+
+  focusTerminal: ->
+    return unless @activeTerminal?
+
+    if terminal = TerminationView.getFocusedTerminal()
+        @activeTerminal.blur()
+
+    else
+        @activeTerminal.focusTerminal()
 
   getTerminalById: (target, selector) ->
     selector ?= (terminal) -> terminal.id
