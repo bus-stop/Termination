@@ -1,7 +1,7 @@
 {
   "name": "termination",
   "main": "./lib/termination",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A terminal package for Atom, complete with themes, API and more. Fork of platformio-ide-terminal.",
   "author": "Jeremy Ebneyamin",
   "keywords": [
@@ -51,20 +51,20 @@
     {
       "name": "Yianni Kostantinidis",
       "url": "http://yianni.codes/"
-     },
+    },
     {
       "name": "Guten Ye",
       "email": "guten@guten.me",
       "url": "http://guten.me/"
     },
     {
-     "name": "Hani Sharabash",
-     "url": "https://github.com/hanibash"
- },
- {
-     "name": "Pietro De Nicolao",
-     "url": "https://pietrodn.wordpress.org/"
- }
+      "name": "Hani Sharabash",
+      "url": "https://github.com/hanibash"
+    },
+    {
+      "name": "Pietro De Nicolao",
+      "url": "https://pietrodn.wordpress.org/"
+    }
   ],
   "homepage": "https://atom.io/packages/termination",
   "repository": "https://github.com/Fred-Barclay/Termination",
