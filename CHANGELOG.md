@@ -1,9 +1,9 @@
-## 0.5.1 (development)
+## 0.5.1
  * Removed unnecessary keybindings for termination:focus
  * Added keyboard shortcut to open/switch between up to four open terminals - @gutenye (Guten Ye)
  * Merged #24 from @hanibash (Hani Sharabash). Themes are in charge of setting ANSI colours.
  * Fixed bug when resizing the panel. Reported and fixed upstream by @mgyongyosi.
- * Improved handling of termination:focus for #38 (fixed upstream by @pietrodn) -- Waiting on confirmation
+ * Improved handling of termination:focus for #38 (fixed upstream by @pietrodn)
 
 ## 0.5.0
  * Added `ELECTRON_RUN_AS_NODE` env variable to replace deprecated (and previously removed) variable. Should solve problems running `atom`, `electron`, `node`, and `npm` from inside Termination.
