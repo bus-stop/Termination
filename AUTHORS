@@ -24,3 +24,6 @@ Guten Ye (https://github.com/gutenye)
 
 Hani Sharabash (https://github.com/hanibash)
  * Themes now set ANSI colours
+
+Pietro De Nicolao (https://github.com/pietrodn)
+ * Fix termination:focus when a terminal is not opened.

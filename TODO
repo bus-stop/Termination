@@ -7,5 +7,3 @@ Explain in README.md the differences between upstream and us
 Split termination window to a new pane on left or right
 
 Finish terminal colour settings
-
-Depending on #38, add @pietrodn to authors/contributors
