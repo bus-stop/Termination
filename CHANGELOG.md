@@ -1,3 +1,6 @@
+## 0.5.2 (development)
+ * Added note that theme change requires terminal restart.
+
 ## 0.5.1
  * Removed unnecessary keybindings for termination:focus
  * Added keyboard shortcut to open/switch between up to four open terminals - @gutenye (Guten Ye)
@@ -82,6 +85,5 @@
  * Added "MIT" license to package.json
 
 ## 0.1.0
-
  * Initial fork from platform-ide-terminal
  * Adapted style of terminal-plus (as much as possible)
