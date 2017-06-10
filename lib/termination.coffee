@@ -150,7 +150,8 @@ module.exports =
             'Christmas',
             'github',
             'one-dark',
-            'one-light'
+            'one-light',
+            'bliss'
           ]
     iconColors:
       type: 'object'
