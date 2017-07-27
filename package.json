@@ -12,7 +12,8 @@
     "term",
     "plus",
     "panel",
-    "tty"
+    "tty",
+    "xterm"
   ],
   "contributors": [
     {

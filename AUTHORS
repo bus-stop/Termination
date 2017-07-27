@@ -27,3 +27,6 @@ Hani Sharabash (https://github.com/hanibash)
 
 Pietro De Nicolao (https://github.com/pietrodn)
  * Fix termination:focus when a terminal is not opened.
+
+Ivan Kravets (https://github.com/ivankravets)
+ * Fix issue when running `electron` command

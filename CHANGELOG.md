@@ -1,5 +1,6 @@
 ## 0.5.2 (development)
  * Added note that theme change requires terminal restart.
+ * Fix issue when running `electron` command (@ivankravets)
 
 ## 0.5.1
  * Removed unnecessary keybindings for termination:focus
