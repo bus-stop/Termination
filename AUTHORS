@@ -30,3 +30,6 @@ Pietro De Nicolao (https://github.com/pietrodn)
 
 Ivan Kravets (https://github.com/ivankravets)
  * Fix issue when running `electron` command
+
+ Aaron Burmeister (https://github.com/AaronBurmeister)
+  * Lots of fixes for focusing the terminal

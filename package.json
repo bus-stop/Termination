@@ -65,6 +65,10 @@
     {
       "name": "Pietro De Nicolao",
       "url": "https://pietrodn.wordpress.org/"
+    },
+    {
+      "name": "Aaron Burmeister",
+      "url": "https://github.com/AaronBurmeister"
     }
   ],
   "homepage": "https://atom.io/packages/termination",
