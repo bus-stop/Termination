@@ -1,6 +1,7 @@
-## 0.5.2 (development)
+## 0.6.0
  * Added note that theme change requires terminal restart.
  * Fix issue when running `electron` command (@ivankravets)
+ * Fix for running on Atom 1.19
 
 ## 0.5.1
  * Removed unnecessary keybindings for termination:focus

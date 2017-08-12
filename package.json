@@ -72,7 +72,7 @@
   "bugs": "https://github.com/Fred-Barclay/Termination/issues",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.2.0"
+    "atom": ">=1.19.0"
   },
   "dependencies": {
     "atom-space-pen-views": "^2.1.0",
