@@ -151,7 +151,8 @@ module.exports =
             'github',
             'one-dark',
             'one-light',
-            'bliss'
+            'bliss',
+            'gruvbox'
           ]
     iconColors:
       type: 'object'
