@@ -1,3 +1,7 @@
+## 0.6.1 (development)
+ * Merged gruvbox theme (from @mike3run)
+ * Fixed corruption when terminal is maximised (from @takumiabe)
+
 ## 0.6.0
  * Added note that theme change requires terminal restart.
  * Fix issue when running `electron` command (@ivankravets)

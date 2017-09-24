@@ -30,3 +30,9 @@ Pietro De Nicolao (https://github.com/pietrodn)
 
 Ivan Kravets (https://github.com/ivankravets)
  * Fix issue when running `electron` command
+
+ Miguel Palau (https://github.com/mike3run)
+ * Add gruvbox theme
+
+ Takumi Abe(https://github.com/takumiabe)
+  * Fix terminal corruption on fullscreen

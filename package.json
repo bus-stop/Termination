@@ -65,7 +65,16 @@
     {
       "name": "Pietro De Nicolao",
       "url": "https://pietrodn.wordpress.org/"
+    },
+    {
+      "name": "Miguel Palau",
+      "url": "https://github.com/mike3run"
+    },
+    {
+      "name": "Takumi Abe",
+      "url": "https://github.com/takumiabe"
     }
+
   ],
   "homepage": "https://atom.io/packages/termination",
   "repository": "https://github.com/Fred-Barclay/Termination",
