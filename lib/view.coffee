@@ -178,7 +178,7 @@ class TerminationView extends View
     @subscriptions.remove @maximizeBtn.tooltip
     @maximizeBtn.tooltip.dispose()
 
-    @maxHeight = @prevHeight + $('.item-views').height()
+    @maxHeight = @prevHeight + atom.workspace.getCenter().paneContainer.element.offsetHeight
     btn = @maximizeBtn.children('span')
     @onTransitionEnd => @focus()
 
