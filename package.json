@@ -1,7 +1,7 @@
 {
   "name": "termination",
   "main": "./lib/termination",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A terminal package for Atom, complete with themes, API and more. Fork of platformio-ide-terminal.",
   "author": "Jeremy Ebneyamin",
   "keywords": [
@@ -74,7 +74,6 @@
       "name": "Takumi Abe",
       "url": "https://github.com/takumiabe"
     }
-
   ],
   "homepage": "https://atom.io/packages/termination",
   "repository": "https://github.com/Fred-Barclay/Termination",
