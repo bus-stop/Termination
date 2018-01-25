@@ -1,6 +1,7 @@
 ## 0.6.1 (development)
  * Merged gruvbox theme (from @mike3run)
  * Fixed corruption when terminal is maximised (from @takumiabe)
+ * Fixed "Arguments to path.basename must be strings" #158 on PIO upstream (from @anderoonies)
 
 ## 0.6.0
  * Added note that theme change requires terminal restart.

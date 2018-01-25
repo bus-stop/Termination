@@ -34,5 +34,8 @@ Ivan Kravets (https://github.com/ivankravets)
  Miguel Palau (https://github.com/mike3run)
  * Add gruvbox theme
 
- Takumi Abe(https://github.com/takumiabe)
+ Takumi Abe (https://github.com/takumiabe)
   * Fix terminal corruption on fullscreen
+
+Andy Bayer (https://github.com/anderoonies)
+  * Fixed deprecation of Object.basename

@@ -73,6 +73,10 @@
     {
       "name": "Takumi Abe",
       "url": "https://github.com/takumiabe"
+    },
+    {
+      "name": "Andy Bayer",
+      "url": "https://github.com/anderoonies"
     }
   ],
   "homepage": "https://atom.io/packages/termination",
