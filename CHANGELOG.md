@@ -2,6 +2,7 @@
  * Merged gruvbox theme (from @mike3run)
  * Fixed corruption when terminal is maximised (from @takumiabe)
  * Fixed "Arguments to path.basename must be strings" #158 on PIO upstream (from @anderoonies)
+ * Added 'clear' option to context (right-click) menu (from @yubaoquan)
 
 ## 0.6.0
  * Added note that theme change requires terminal restart.

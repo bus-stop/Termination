@@ -22,6 +22,8 @@
     {type: 'separator'},
     {label: 'Hide', command: 'termination:hide'},
     {label: 'Close', command: 'termination:close'}
+    {type: 'separator'}
+    {label: "Clear", command: 'termination:clear'}
   ]
 'menu': [
   {

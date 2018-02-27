@@ -39,3 +39,6 @@ Ivan Kravets (https://github.com/ivankravets)
 
 Andy Bayer (https://github.com/anderoonies)
   * Fixed deprecation of Object.basename
+
+Jerry Yu (https://github.com/yubaoquan)
+  * Add 'clear' option to context (right-click) menu

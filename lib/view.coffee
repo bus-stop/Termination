@@ -414,6 +414,10 @@ class TerminationView extends View
   paste: ->
     @input atom.clipboard.read()
 
+  clear: ->
+    @terminal.destroy()
+    @displayTerminal()
+
   copyAllToNewFile: ->
     text = @terminal.lines.map (line) ->
       line.map (cols) -> cols[1]

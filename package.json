@@ -32,51 +32,8 @@
       "url": "https://github.com/Fred-Barclay"
     },
     {
-      "name": "Ben Pritchard",
-      "url": "https://github.com/benpritchard"
-    },
-    {
-      "name": "Peter Benjamin",
-      "email": "petermbenjamin@gmail.com",
-      "url": "https://github.com/pmbenjamin"
-    },
-    {
-      "name": "David Klanac",
-      "url": "https://github.com/dklanac"
-    },
-    {
-      "name": "Ben Phelps",
-      "email": "ben@phelps.io",
-      "url": "https://github.com/benphelps"
-    },
-    {
-      "name": "Yianni Kostantinidis",
-      "url": "http://yianni.codes/"
-    },
-    {
-      "name": "Guten Ye",
-      "email": "guten@guten.me",
-      "url": "http://guten.me/"
-    },
-    {
-      "name": "Hani Sharabash",
-      "url": "https://github.com/hanibash"
-    },
-    {
-      "name": "Pietro De Nicolao",
-      "url": "https://pietrodn.wordpress.org/"
-    },
-    {
-      "name": "Miguel Palau",
-      "url": "https://github.com/mike3run"
-    },
-    {
-      "name": "Takumi Abe",
-      "url": "https://github.com/takumiabe"
-    },
-    {
-      "name": "Andy Bayer",
-      "url": "https://github.com/anderoonies"
+    "name": "Our *awesome* community!",
+    "url": "https://github.com/Fred-Barclay/Termination/blob/master/AUTHORS"
     }
   ],
   "homepage": "https://atom.io/packages/termination",
