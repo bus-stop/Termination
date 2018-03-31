@@ -104,7 +104,7 @@ module.exports =
       properties:
         animationSpeed:
           title: 'Animation Speed'
-          description: 'How fast should the window animate?'
+          description: 'How fast should the window animate? A value of 0 disables animation'.
           type: 'number'
           default: '1'
           minimum: '0'
