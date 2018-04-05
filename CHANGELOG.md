@@ -1,8 +1,13 @@
-## 0.6.1 (development)
+## 0.6.2
+* Fixed "Arguments to path.basename must be strings" #158 on PIO upstream (from @anderoonies)
+* Added 'clear' option to context (right-click) menu (from @yubaoquan). Still
+  requires API merge.
+* Issuing new update to trigger rebuild of dependencies - should fix problem
+  with the new Electron in Atom 25. See issue #71
+
+## 0.6.1
  * Merged gruvbox theme (from @mike3run)
  * Fixed corruption when terminal is maximised (from @takumiabe)
- * Fixed "Arguments to path.basename must be strings" #158 on PIO upstream (from @anderoonies)
- * Added 'clear' option to context (right-click) menu (from @yubaoquan)
 
 ## 0.6.0
  * Added note that theme change requires terminal restart.
