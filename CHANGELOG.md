@@ -1,5 +1,6 @@
 ## 0.6.3
 * Fix copy-paste, Issue #53 and PR #55 on PIO upstream (from @matt3224)
+* Support for Atom 28 (Electron 2.0). See issue #77.
 
 ## 0.6.2
 * Fixed "Arguments to path.basename must be strings" #158 on PIO upstream (from @anderoonies)
