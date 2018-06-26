@@ -1,3 +1,6 @@
+## 0.6.3
+* Fix copy-paste, Issue #53 and PR #55 on PIO upstream (from @matt3224)
+
 ## 0.6.2
 * Fixed "Arguments to path.basename must be strings" #158 on PIO upstream (from @anderoonies)
 * Added 'clear' option to context (right-click) menu (from @yubaoquan). Still
