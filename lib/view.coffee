@@ -40,7 +40,7 @@ class TerminationView extends View
   @getFocusedTerminal: ->
     return Terminal.Terminal.focus
 
-  initialize: (@id, @pwd, @statusIcon, @statusBar, @shell, @args=[], @autoRun=[]) ->
+  initialize: (@id, @pwd, @statusIcon, @statusBar, @shell, @args=[], @env={}, @autoRun=[]) ->
     @subscriptions = new CompositeDisposable
     @emitter = new Emitter
 
@@ -71,7 +71,12 @@ class TerminationView extends View
     @xterm.on 'mouseup', (event) =>
       if event.which != 3
         text = window.getSelection().toString()
-        atom.clipboard.write(text) if atom.config.get('termination.toggles.selectToCopy') and text
+        if atom.config.get('termination.toggles.selectToCopy') and text
+          rawLines = text.split(/\r?\n/g)
+          lines = rawLines.map (line) ->
+            line.replace(/\s/g, " ").trimRight()
+          text = lines.join("\n")
+          atom.clipboard.write(text)
         unless text
           @focus()
     @xterm.on 'dragenter', override
@@ -81,6 +86,9 @@ class TerminationView extends View
     @on 'focus', @focus
     @subscriptions.add dispose: =>
       @off 'focus', @focus
+
+    if /zsh|bash/.test(@shell) and @args.indexOf('--login') == -1 and Pty.platform isnt 'win32' and atom.config.get('termination.toggles.loginShell')
+      @args.unshift '--login'
 
   attach: ->
     return if @panel?
@@ -107,7 +115,7 @@ class TerminationView extends View
         @input "#{file.path} "
 
   forkPtyProcess: ->
-    Task.once Pty, path.resolve(@pwd), @shell, @args, =>
+    Task.once Pty, path.resolve(@pwd), @shell, @args, @env, =>
       @input = ->
       @resize = ->
 
@@ -224,6 +232,7 @@ class TerminationView extends View
         @displayTerminal()
         @prevHeight = @nearestRow(@xterm.height())
         @xterm.height(@prevHeight)
+        @emit "termination:terminal-open"
       else
         @focus()
 
@@ -266,6 +275,28 @@ class TerminationView extends View
     return unless @ptyProcess.childProcess?
 
     @ptyProcess.send {event: 'resize', rows, cols}
+
+  pty: () ->
+    if not @opened
+      wait = new Promise (resolve, reject) =>
+        @emitter.on "platformio-ide-terminal:terminal-open", () =>
+          resolve()
+        setTimeout reject, 1000
+
+      wait.then () =>
+        @ptyPromise()
+    else
+      @ptyPromise()
+
+  ptyPromise: () ->
+    new Promise (resolve, reject) =>
+      if @ptyProcess?
+        @ptyProcess.on "platformio-ide-terminal:pty", (pty) =>
+          resolve(pty)
+        @ptyProcess.send {event: 'pty'}
+        setTimeout reject, 1000
+      else
+        reject()
 
   applyStyle: ->
     config = atom.config.get 'termination'
@@ -414,10 +445,6 @@ class TerminationView extends View
   paste: ->
     @input atom.clipboard.read()
 
-  clear: ->
-    @terminal.destroy()
-    @displayTerminal()
-
   copyAllToNewFile: ->
     text = @terminal.lines.map (line) ->
       line.map (cols) -> cols[1]
@@ -446,9 +473,9 @@ class TerminationView extends View
       replace(/\$S/, selectionText).
       replace(/\$\$/, '$')}#{if runCommand then os.EOL else ''}"
 
-  focus: =>
+  focus: (fromWindowEvent) =>
     @resizeTerminalToView()
-    @focusTerminal()
+    @focusTerminal(fromWindowEvent)
     @statusBar.setActiveTerminalView(this)
     super()
 
@@ -456,10 +483,11 @@ class TerminationView extends View
     @blurTerminal()
     super()
 
-  focusTerminal: =>
+  focusTerminal: (fromWindowEvent) =>
     return unless @terminal
 
     lastActiveElement = $(document.activeElement)
+    return if fromWindowEvent and not (lastActiveElement.is('div.terminal') or lastActiveElement.parents('div.terminal').length)
 
     @terminal.focus()
     if @terminal._textarea

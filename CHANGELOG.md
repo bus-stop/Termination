@@ -1,3 +1,10 @@
+## 0.7.0-dev
+* More unity with upstream
+* Bump atom-space-pen-views to 2.2.0
+* Add city lights theme (from @geriBatai)
+* Add upstream API
+* "clear" terminal option working
+
 ## 0.6.3
 * Fix copy-paste, Issue #53 and PR #55 on PIO upstream (from @matt3224)
 * Support for Atom 28 (Electron 2.0). See issue #77.

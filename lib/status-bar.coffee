@@ -6,6 +6,7 @@ StatusIcon = require './status-icon'
 
 os = require 'os'
 path = require 'path'
+_ = require 'underscore'
 
 module.exports =
 class StatusBar extends View
@@ -54,6 +55,7 @@ class StatusBar extends View
         return if @activeTerminal.isAnimating()
         return @activeTerminal.toggle() if @activeTerminal == @terminalViews[3]
         @activeTerminal.open() if @activeTerminalView(3)
+      'termination:clear': => @clear()
       'termination:close': => @destroyActiveTerm()
       'termination:close-all': => @closeAll()
       'termination:rename': => @runInActiveView (i) -> i.rename()
@@ -121,7 +123,7 @@ class StatusBar extends View
     handleFocus = =>
       if @returnFocus
         setTimeout =>
-          @returnFocus?.focus()
+          @returnFocus?.focus(true)
           @returnFocus = null
         , 100
 
@@ -170,6 +172,20 @@ class StatusBar extends View
       pane.onDidDestroy -> tabBar.off 'drop', @onDropTabBar
 
   createTerminalView: (autoRun) ->
+    shell = atom.config.get 'termination.core.shell'
+    shellArguments = atom.config.get 'termination.core.shellArguments'
+    args = shellArguments.split(/\s+/g).filter (arg) -> arg
+    shellEnv = atom.config.get 'termination.core.shellEnv'
+    env = {}
+    shellEnv.split(' ').forEach((element) =>
+      configVar = element.split('=')
+      envVar = {}
+      envVar[configVar[0]] = configVar[1]
+      env = _.extend(env, envVar)
+    )
+    @createEmptyTerminalView autoRun, shell, args, env
+
+  createEmptyTerminalView: (autoRun=[], shell = null, args = [], env= {}) ->
     @registerPaneSubscription() unless @paneSubscription?
 
     projectFolder = atom.project.getPaths()[0]
@@ -193,12 +209,8 @@ class StatusBar extends View
     id = editorPath or projectFolder or home
     id = filePath: id, folderPath: path.dirname(id)
 
-    shell = atom.config.get 'termination.core.shell'
-    shellArguments = atom.config.get 'termination.core.shellArguments'
-    args = shellArguments.split(/\s+/g).filter (arg) -> arg
-
     statusIcon = new StatusIcon()
-    terminationView = new TerminationView(id, pwd, statusIcon, this, shell, args, autoRun)
+    terminationView = new TerminationView(id, pwd, statusIcon, this, shell, args, env, autoRun)
     statusIcon.initialize(terminationView)
 
     terminationView.attach()
@@ -239,7 +251,6 @@ class StatusBar extends View
 
     if terminal = TerminationView.getFocusedTerminal()
         @activeTerminal.blur()
-
     else
         @activeTerminal.focusTerminal()
 
@@ -266,6 +277,11 @@ class StatusBar extends View
     if view?
       return callback(view)
     return null
+
+  runNewTerminal: () ->
+    @activeTerminal = @createEmptyTerminalView()
+    @activeTerminal.toggle()
+    return @activeTerminal
 
   runCommandInNewTerminal: (commands) ->
     @activeTerminal = @createTerminalView(commands)
@@ -336,6 +352,10 @@ class StatusBar extends View
     else if @activeTerminal == null
       @activeTerminal = @terminalViews[0]
     @activeTerminal.toggle()
+
+  clear: ->
+    @destroyActiveTerm()
+    @newTerminalView()
 
   setStatusColor: (event) ->
     color = event.type.match(/\w+$/)[0]
@@ -424,7 +444,7 @@ class StatusBar extends View
     @statusContainer.children().eq(fromIndex).detach()
     view.statusIcon.removeTooltip()
 
-    pane.addItem view, { index: pane.getItems().length }
+    pane.addItem view, pane.getItems().length
     pane.activateItem view
 
     view.focus()

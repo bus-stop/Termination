@@ -7,6 +7,17 @@ module.exports =
     @statusBarTile?.destroy()
     @statusBarTile = null
 
+  provideTerminationTerminal: ->
+    updateProcessEnv: (variables) ->
+      for name, value of variables
+        process.env[name] = value
+    run: (commands) =>
+      @statusBarTile.runCommandInNewTerminal commands
+    getTerminalViews: () =>
+      @statusBarTile.terminalViews
+    open: () =>
+      @statusBarTile.runNewTerminal()
+
   provideRunInTerminal: ->
     run: (commands) =>
       @statusBarTile.runCommandInNewTerminal commands
@@ -40,6 +51,11 @@ module.exports =
         selectToCopy:
            title: 'Select To Copy'
            description: 'Copies text to clipboard when selection happens.'
+           type: 'boolean'
+           default: true
+         loginShell:
+           title: 'Login Shell'
+           description: 'Use --login on zsh and bash.'
            type: 'boolean'
            default: true
         cloneTerminalPlus:
@@ -89,6 +105,11 @@ module.exports =
         shellArguments:
           title: 'Shell Arguments'
           description: 'Specify some arguments to use when launching the shell.'
+          type: 'string'
+          default: ''
+        shellEnv:
+          title: 'Shell Environment Variables'
+          description: 'Specify some additional environment variables, space separated with the form `VAR=VALUE`'
           type: 'string'
           default: ''
         workingDirectory:
@@ -152,7 +173,8 @@ module.exports =
             'one-dark',
             'one-light',
             'bliss',
-            'gruvbox'
+            'gruvbox',
+            'city-lights'
           ]
     iconColors:
       type: 'object'
