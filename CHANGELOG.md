@@ -3,7 +3,8 @@
 * Bump atom-space-pen-views to 2.2.0
 * Add city lights theme (from @geriBatai)
 * Add upstream API
-* "clear" terminal option working
+* "clear" terminal option working (added in 0.6.2)
+* Hugely improved toolbar button appearance
 
 ## 0.6.3
 * Fix copy-paste, Issue #53 and PR #55 on PIO upstream (from @matt3224)
