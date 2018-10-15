@@ -278,7 +278,7 @@ class TerminationView extends View
   pty: () ->
     if not @opened
       wait = new Promise (resolve, reject) =>
-        @emitter.on "platformio-ide-terminal:terminal-open", () =>
+        @emitter.on "termination:terminal-open", () =>
           resolve()
         setTimeout reject, 1000
 
@@ -290,7 +290,7 @@ class TerminationView extends View
   ptyPromise: () ->
     new Promise (resolve, reject) =>
       if @ptyProcess?
-        @ptyProcess.on "platformio-ide-terminal:pty", (pty) =>
+        @ptyProcess.on "termination:pty", (pty) =>
           resolve(pty)
         @ptyProcess.send {event: 'pty'}
         setTimeout reject, 1000
