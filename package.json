@@ -60,10 +60,10 @@
     }
   },
   "providedServices": {
-    "platformioIDETerminal": {
-      "description": "PlatformIO IDE Terminal API",
+    "TerminationTerminal": {
+      "description": "Termination API",
       "versions": {
-        "1.1.0": "providePlatformIOIDETerminal"
+        "1.1.0": "provideTerminationTerminal"
       }
     },
     "runInTerminal": {
