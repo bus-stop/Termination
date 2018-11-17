@@ -1,7 +1,7 @@
 ## 0.7.0-dev
 * More unity with upstream
 * Bump atom-space-pen-views to 2.2.0
-* Add city lights theme (from @geriBatai)
+* Add city lights theme (from @geriBatai) (temporarily disabled)
 * Add upstream API
 * "clear" terminal option working (added in 0.6.2)
 * Hugely improved toolbar button appearance

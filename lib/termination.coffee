@@ -173,8 +173,7 @@ module.exports =
             'one-dark',
             'one-light',
             'bliss',
-            'gruvbox',
-            'city-lights'
+            'gruvbox'
           ]
     iconColors:
       type: 'object'
