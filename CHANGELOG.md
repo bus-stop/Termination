@@ -1,4 +1,4 @@
-## 0.7.0-dev
+## 0.7.0
 * More unity with upstream
 * Bump atom-space-pen-views to 2.2.0
 * Add city lights theme (from @geriBatai) (temporarily disabled)
