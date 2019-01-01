@@ -1,5 +1,5 @@
 # Termination
-![AWIP](https://unpkg.com/vvwip/AWIP.svg)  
+![WIP](https://unpkg.com/vvwip/WIP.svg)  
 A terminal package for Atom, complete with themes, API and more. Forked from platformio-ide-terminal.
 
 [terminal-plus](https://github.com/jeremyramin/terminal-plus) was a much-loved
