@@ -1,3 +1,6 @@
+## 0.7.1
+* Switch from pty.js to node-pty (fixes #86)
+
 ## 0.7.0
 * More unity with upstream
 * Bump atom-space-pen-views to 2.2.0
