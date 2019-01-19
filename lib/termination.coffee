@@ -28,9 +28,6 @@ module.exports =
   consumeStatusBar: (statusBarProvider) ->
     @statusBarTile = new (require './status-bar')(statusBarProvider)
 
-  consumeTreeView: (treeView) ->
-    @selectedFiles = treeView.selectedPaths()
-
   config:
     toggles:
       type: 'object'
