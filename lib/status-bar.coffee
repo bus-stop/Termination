@@ -213,7 +213,7 @@ class StatusBar extends View
     statusIcon = new StatusIcon()
     terminationView = new TerminationView(id, pwd, statusIcon, this, shell, args, env, autoRun)
     statusIcon.initialize(terminationView)
-    statusIcon.updateName currentDirectory + '/'
+    statusIcon.updateName currentDirectory + '/' if atom.config.get('termination.toggles.autoName')
 
     terminationView.attach()
 
