@@ -1,6 +1,5 @@
 module.exports =
   statusBar: null
-  selectedFiles: null
 
   activate: ->
 
