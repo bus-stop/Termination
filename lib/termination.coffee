@@ -37,6 +37,12 @@ module.exports =
           description: 'Should the terminal close if the shell exits?'
           type: 'boolean'
           default: true
+        autoName:
+          title: 'Auto Name Terminal'
+          description: 'Should the terminal name itself based on the directory
+          of the current file open in your text editor?'
+          type: 'boolean'
+          default: true
         cursorBlink:
           title: 'Cursor Blink'
           description: 'Should the cursor blink when the terminal is active?'

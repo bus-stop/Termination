@@ -207,11 +207,13 @@ class StatusBar extends View
       else pwd = home
 
     id = editorPath or projectFolder or home
+    currentDirectory = if path.basename(id).indexOf('.') >= 0 then path.basename(path.dirname(id)) else path.basename(id)
     id = filePath: id, folderPath: path.dirname(id)
 
     statusIcon = new StatusIcon()
     terminationView = new TerminationView(id, pwd, statusIcon, this, shell, args, env, autoRun)
     statusIcon.initialize(terminationView)
+    statusIcon.updateName currentDirectory + '/' if atom.config.get('termination.toggles.autoName')
 
     terminationView.attach()
 
