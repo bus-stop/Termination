@@ -15,9 +15,9 @@ class StatusBar extends View
   returnFocus: null
 
   @content: ->
-    @div class: 'termination status-bar', tabindex: -1, =>
+    @div class: 'termination inline-block', tabindex: -1, =>
       @i class: "icon icon-plus", click: 'newTerminalView', outlet: 'plusBtn'
-      @ul class: "list-inline status-container", tabindex: '-1', outlet: 'statusContainer', is: 'space-pen-ul'
+      @ul class: "inline-block list-inline status-container", tabindex: '-1', outlet: 'statusContainer', is: 'space-pen-ul'
       @i class: "icon icon-x", click: 'closeAll', outlet: 'closeBtn'
 
   initialize: (@statusBarProvider) ->
