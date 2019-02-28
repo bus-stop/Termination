@@ -446,7 +446,7 @@ class StatusBar extends View
     @statusContainer.children().eq(fromIndex).detach()
     view.statusIcon.removeTooltip()
 
-    pane.addItem view, pane.getItems().length
+    pane.addItem view, { index: pane.getItems().length }
     pane.activateItem view
 
     view.focus()
