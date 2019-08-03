@@ -54,3 +54,6 @@ Ash (https://github.com/ashthespy)
 
 the-j0k3r (https://github.com/the-j0k3r)
   * Co-author for switch from pty.js to node-pty
+
+Daniel Peach (https://github.com/djpeach)
+  * Added auto-name terminals option

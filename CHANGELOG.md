@@ -1,3 +1,7 @@
+## 0.7.2
+* Auto-name terminals added and on by default
+* Switch to node-pty to node-pyt-multiarch (fixes issues with Atom 1.39)
+
 ## 0.7.1
 * Switch from pty.js to node-pty (fixes #86)
 
