@@ -1,3 +1,6 @@
+## 0.7.3
+* Quick bugfix release: node-pty-multiarch is a typo and should be node-pty-prebuilt-multiarch (see issue #98)
+
 ## 0.7.2
 * Auto-name terminals added and on by default
 * Switch to node-pty to node-pyt-multiarch (fixes issues with Atom 1.39)
