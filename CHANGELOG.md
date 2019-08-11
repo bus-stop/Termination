@@ -1,3 +1,6 @@
+## 0.7.4
+* Update node-pyt-prebuilt-multiarch to 0.9.0-beta21.legacy to fix Electron 3 issues with Windows 10 (see issue #99)
+
 ## 0.7.3
 * Quick bugfix release: node-pty-multiarch is a typo and should be node-pty-prebuilt-multiarch (see issue #98)
 
