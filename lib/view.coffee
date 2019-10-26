@@ -313,6 +313,10 @@ class TerminationView extends View
     @xterm.addClass config.style.theme
     @xterm.addClass 'cursor-blink' if config.toggles.cursorBlink
 
+    @subscriptions.add atom.config.onDidChange 'termination.style.theme', (event) =>
+      @xterm.removeClass event.oldValue
+      @xterm.addClass event.newValue
+
     ansiColors = require('./themes/' + config.style.theme)
 
     editorFont = atom.config.get('editor.fontFamily')

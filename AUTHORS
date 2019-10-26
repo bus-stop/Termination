@@ -60,3 +60,4 @@ Daniel Peach (https://github.com/djpeach)
 
 Matt Lyons (https://github.com/mattlyons0)
   * Added toggle to disable toolbar buttons
+  * Update themes on config changes without requiring terminal reload

@@ -1,5 +1,6 @@
 ## 0.7.5 (in progress)
 * Add setting to disable toolbar buttons (from @mattlyons0)
+* Update themes on config changes without requiring terminal reload (from @mattlyons0)
 
 ## 0.7.4
 * Update node-pyt-prebuilt-multiarch to 0.9.0-beta21.legacy to fix Electron 3 issues with Windows 10 (see issue #99)
