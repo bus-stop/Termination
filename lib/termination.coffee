@@ -160,7 +160,7 @@ module.exports =
           default: '300px'
         theme:
           title: 'Theme'
-          description: 'Select a theme for the terminal. **Requires terminal restart.**'
+          description: 'Select a theme for the terminal.'
           type: 'string'
           default: 'standard'
           enum: [
