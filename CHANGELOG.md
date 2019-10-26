@@ -1,4 +1,4 @@
-## 0.7.5 (in progress)
+## 0.7.5
 * Add setting to disable toolbar buttons (from @mattlyons0)
 * Update themes on config changes without requiring terminal reload (from @mattlyons0)
 
