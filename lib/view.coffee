@@ -27,7 +27,7 @@ class TerminationView extends View
     @div class: 'termination terminal-view', outlet: 'terminationView', =>
       @div class: 'panel-divider', outlet: 'panelDivider'
       @section class: 'input-block', =>
-        @div class: 'btn-toolbar', =>
+        @div outlet: 'toolbar', class: 'btn-toolbar', =>
           @div class: 'btn-group', =>
             @button outlet: 'inputBtn', class: 'btn icon icon-keyboard', click: 'inputDialog'
           @div class: 'btn-group right', =>
@@ -61,6 +61,9 @@ class TerminationView extends View
 
     @setAnimationSpeed()
     @subscriptions.add atom.config.onDidChange 'termination.style.animationSpeed', @setAnimationSpeed
+
+    @updateToolbarVisibility()
+    @subscriptions.add atom.config.onDidChange 'termination.toggles.showToolbar', @updateToolbarVisibility
 
     override = (event) ->
       return if event.originalEvent.dataTransfer.getData('termination') is 'true'
@@ -98,6 +101,13 @@ class TerminationView extends View
     @animationSpeed = 100 if @animationSpeed is 0
 
     @xterm.css 'transition', "height #{0.25 / @animationSpeed}s linear"
+
+  updateToolbarVisibility: =>
+    @showToolbar = atom.config.get('termination.toggles.showToolbar')
+    if @showToolbar
+      @toolbar.css 'display', 'block'
+    else
+      @toolbar.css 'display', 'none'
 
   recieveItemOrFile: (event) =>
     event.preventDefault()

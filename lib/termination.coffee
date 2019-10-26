@@ -64,6 +64,11 @@ module.exports =
            description: 'Use --login on zsh and bash.'
            type: 'boolean'
            default: true
+        showToolbar:
+          title: 'Show Toolbar'
+          description: 'Show toolbar above terminal window.'
+          type: 'boolean'
+          default: true
         cloneTerminalPlus:
           title: 'Clone Terminal-Plus'
           description: 'Should there be a dedicated bottom panel for termination?
