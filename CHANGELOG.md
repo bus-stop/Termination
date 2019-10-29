@@ -1,6 +1,7 @@
 ## 0.7.6 (in progress)
 * Update node-pty-prebuilt-multiarch dependency
 * Update term.js dependency
+* Cosmetic: Add badges to README.md
 
 ## 0.7.5
 * Add setting to disable toolbar buttons (from @mattlyons0)

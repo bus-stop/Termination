@@ -1,5 +1,11 @@
 # Termination
-![WIP](https://unpkg.com/vvwip/WIP.svg)  
+![WIP](https://unpkg.com/vvwip/WIP.svg)
+
+[![Dependencies Status](https://img.shields.io/david/dev/bus-stop/term.js.svg?label=devDependencies&style=for-the-badge)](https://david-dm.org/Fred-Barclay/Termination)
+[![Latest Release](https://img.shields.io/github/v/tag/Fred-Barclay/Termination.svg?sort=semver&style=for-the-badge)](https://github.com/Fred-Barclay/Termination/releases/latest)
+[![Stars](https://img.shields.io/github/stars/Fred-Barclay/Termination.svg?style=for-the-badge)](https://github.com/Fred-Barclay/Termination/stargazers)
+[![Forks](https://img.shields.io/github/forks/Fred-Barclay/Termination.svg?style=for-the-badge)](https://github.com/Fred-Barclay/Termination/network/members)
+
 A terminal package for Atom, complete with themes, API and more. Forked from platformio-ide-terminal.
 
 [terminal-plus](https://github.com/jeremyramin/terminal-plus) was a much-loved
