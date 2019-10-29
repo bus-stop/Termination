@@ -1,5 +1,6 @@
 ## 0.7.6 (in progress)
 * Update node-pty-prebuilt-multiarch dependency
+* Update term.js dependency
 
 ## 0.7.5
 * Add setting to disable toolbar buttons (from @mattlyons0)

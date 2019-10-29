@@ -46,7 +46,7 @@
   "dependencies": {
     "atom-space-pen-views": "^2.2.0",
     "node-pty-prebuilt-multiarch": "^0.9.0",
-    "term.js": "https://github.com/jeremyramin/term.js/tarball/master",
+    "term.js": "https://github.com/bus-stop/term.js/archive/v0.1.0.tar.gz",
     "underscore": "^1.8.3"
   },
   "activationHooks": [
