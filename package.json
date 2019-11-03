@@ -33,12 +33,12 @@
     },
     {
       "name": "Our *awesome* community!",
-      "url": "https://github.com/Fred-Barclay/Termination/blob/master/AUTHORS"
+      "url": "https://github.com/bus-stop/Termination/blob/master/AUTHORS"
     }
   ],
   "homepage": "https://atom.io/packages/termination",
-  "repository": "https://github.com/Fred-Barclay/Termination",
-  "bugs": "https://github.com/Fred-Barclay/Termination/issues",
+  "repository": "https://github.com/bus-stop/Termination",
+  "bugs": "https://github.com/bus-stop/Termination/issues",
   "license": "MIT",
   "engines": {
     "atom": ">=1.41.0 <2.0.0"

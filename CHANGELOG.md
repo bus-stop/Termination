@@ -1,7 +1,8 @@
-## 0.7.6 (in progress)
+## 0.7.6 (development)
 * Update node-pty-prebuilt-multiarch dependency
 * Update term.js dependency
 * Cosmetic: Add badges to README.md
+* Maintenance: Transfer repository to [bus-stop](https://github.com/bus-stop)
 
 ## 0.7.5
 * Add setting to disable toolbar buttons (from @mattlyons0)

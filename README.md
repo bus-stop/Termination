@@ -1,10 +1,9 @@
 # Termination
-![WIP](https://unpkg.com/vvwip/WIP.svg)
 
-[![Dependencies Status](https://img.shields.io/david/dev/bus-stop/term.js.svg?label=devDependencies&style=for-the-badge)](https://david-dm.org/Fred-Barclay/Termination)
-[![Latest Release](https://img.shields.io/github/v/tag/Fred-Barclay/Termination.svg?sort=semver&style=for-the-badge)](https://github.com/Fred-Barclay/Termination/releases/latest)
-[![Stars](https://img.shields.io/github/stars/Fred-Barclay/Termination.svg?style=for-the-badge)](https://github.com/Fred-Barclay/Termination/stargazers)
-[![Forks](https://img.shields.io/github/forks/Fred-Barclay/Termination.svg?style=for-the-badge)](https://github.com/Fred-Barclay/Termination/network/members)
+[![Dependencies Status](https://img.shields.io/david/dev/bus-stop/term.js.svg?label=devDependencies&style=for-the-badge)](https://david-dm.org/bus-stop/Termination)
+[![Latest Release](https://img.shields.io/github/v/tag/bus-stop/Termination.svg?sort=semver&style=for-the-badge)](https://github.com/bus-stop/Termination/releases/latest)
+[![Stars](https://img.shields.io/github/stars/bus-stop/Termination.svg?style=for-the-badge)](https://github.com/bus-stop/Termination/stargazers)
+[![Forks](https://img.shields.io/github/forks/bus-stop/Termination.svg?style=for-the-badge)](https://github.com/bus-stop/Termination/network/members)
 
 A terminal package for Atom, complete with themes, API and more. Forked from platformio-ide-terminal.
 
@@ -14,7 +13,7 @@ slowed down and bugs remain unfixed...
 `termination` is here to give you an
 almost-identical tool that is being actively developed!
 
-![demo](https://github.com/Fred-Barclay/Termination/raw/master/resources/demo.gif)
+![demo](https://github.com/bus-stop/Termination/raw/master/resources/demo.gif)
 
 *[Nucleus Dark UI](https://atom.io/themes/nucleus-dark-ui) with [Atom Material Syntax](https://atom.io/themes/atom-material-syntax) and our Homebrew theme.*
 
@@ -57,28 +56,28 @@ Use the following template in your stylesheet:
 ### Process Titles
 By hovering over the terminal status icon, you can see which command process is currently running in the terminal.
 
-![](https://github.com/jeremyramin/terminal-plus/raw/master/resources/terminal_title.png)
+![](https://github.com/bus-stop/Termination/raw/master/resources/terminal_title.png)
 
 ### Terminal Naming
 Need a faster way to figure out which terminal is which? Name your status icons!
 
-![](https://github.com/Fred-Barclay/Termination/raw/master/resources/status-icon_rename.png)
+![](https://github.com/bus-stop/Termination/raw/master/resources/status-icon_rename.png)
 
 Available via the status icon context menu.
 
-![](https://github.com/Fred-Barclay/Termination/raw/master/resources/status-icon_rename-dialog.png)
+![](https://github.com/bus-stop/Termination/raw/master/resources/status-icon_rename-dialog.png)
 
 ### Color Coding
 Color code your status icons!
 
-![](https://github.com/Fred-Barclay/Termination/raw/master/resources/status-icon_color_coding.png)
+![](https://github.com/bus-stop/Termination/raw/master/resources/status-icon_color_coding.png)
 
 The colors are customizable in the settings, however the color names remain the same in the context menu.
 
 ### Sorting
 Organize your open terminal instances by dragging and dropping them.
 
-![](https://github.com/Fred-Barclay/Termination/raw/master/resources/sorting.gif)
+![](https://github.com/bus-stop/Termination/raw/master/resources/sorting.gif)
 
 ### Resizable
 You can resize the view vertically, or just maximize it with the maximize button.
@@ -92,7 +91,7 @@ Dropping a file on the terminal will insert the file path into the input. This w
 ### Insert Selected Text
 Insert and run selected text from your text editor by running the `termination:insert-selected-text` command (`alt-r` or `cmd-shift-r`).
 
-![](https://github.com/Fred-Barclay/Termination/raw/master/resources/insert_selected_text.gif)
+![](https://github.com/bus-stop/Termination/raw/master/resources/insert_selected_text.gif)
 
 If you have text selected, it will insert your selected text into the active terminal and run it.  
 If you don't have text selected it, will run the text on the line where your cursor is then proceed to the next line.
@@ -100,14 +99,14 @@ If you don't have text selected it, will run the text on the line where your cur
 ### Quick Command Insert
 Quickly insert a command to your active terminal by executing the `termination:insert-text` command.
 
-![](https://github.com/Fred-Barclay/Termination/raw/master/resources/insert_text.png)
+![](https://github.com/bus-stop/Termination/raw/master/resources/insert_text.png)
 
 A dialog will pop up asking for the input to insert. If you have the `Run Inserted Text` option enabled in the settings (default is false), termination will automatically run the command for you.
 
 #### Support for Special Keys
 Support for IME, dead keys and other key combinations via the `Insert Text` dialog box. Just click the keyboard button in the top left of the terminal or set up a keymap to the `termination:insert-text` command.
 
-![](https://github.com/Fred-Barclay/Termination/raw/master/resources/special_keys.gif)
+![](https://github.com/bus-stop/Termination/raw/master/resources/special_keys.gif)
 
 Note: Make sure you have the `Run Inserted Command` toggle off otherwise it will run your inserted text.
 
@@ -115,14 +114,14 @@ Note: Make sure you have the `Run Inserted Command` toggle off otherwise it will
 Map your terminals to each file or folder you are working on for automatic terminal switching.
 
 #### File
-![](https://github.com/jeremyramin/terminal-plus/raw/master/resources/map_terminals_to_file.gif)
+![](https://github.com/bus-stop/Termination/raw/master/resources/map_terminals_to_file.gif)
 
 #### Folder
-![](https://github.com/Fred-Barclay/Termination/raw/master/resources/map_terminals_to_folder.gif)
+![](https://github.com/bus-stop/Termination/raw/master/resources/map_terminals_to_folder.gif)
 
 Toggling the `Auto Open a New Terminal (For Terminal Mapping)` option will have the mapping create a new terminal automatically for files and folders that don't have a terminal. The toggle is located right under the `Map Terminals To` option.
 
-![](https://github.com/Fred-Barclay/Termination/raw/master/resources/map_terminals_to_auto_open.gif)
+![](https://github.com/bus-stop/Termination/raw/master/resources/map_terminals_to_auto_open.gif)
 
 ## Install
 Ready to install?
