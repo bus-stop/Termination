@@ -1,4 +1,4 @@
-## 0.7.6 (development)
+## 0.7.6
 * Update node-pty-prebuilt-multiarch dependency
 * Update term.js dependency
 * Cosmetic: Add badges to README.md
