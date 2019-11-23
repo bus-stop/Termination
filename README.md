@@ -1,4 +1,9 @@
-# Termination
+             ████████╗███████╗██████╗ ███╗   ███╗██╗███╗   ██╗ █████╗ ████████╗██╗ ██████╗ ███╗   ██╗
+             ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║████╗  ██║██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
+                ██║   █████╗  ██████╔╝██╔████╔██║██║██╔██╗ ██║███████║   ██║   ██║██║   ██║██╔██╗ ██║
+                ██║   ██╔══╝  ██╔══██╗██║╚██╔╝██║██║██║╚██╗██║██╔══██║   ██║   ██║██║   ██║██║╚██╗██║
+                ██║   ███████╗██║  ██║██║ ╚═╝ ██║██║██║ ╚████║██║  ██║   ██║   ██║╚██████╔╝██║ ╚████║
+                ╚═╝   ╚══════╝╚═╝  ╚═╝╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝   ╚═╝   ╚═╝ ╚═════╝ ╚═╝  ╚═══╝
 
 [![Dependencies Status](https://img.shields.io/david/dev/bus-stop/term.js.svg?label=devDependencies&style=for-the-badge)](https://david-dm.org/bus-stop/Termination)
 [![Latest Release](https://img.shields.io/github/v/tag/bus-stop/Termination.svg?sort=semver&style=for-the-badge)](https://github.com/bus-stop/Termination/releases/latest)
