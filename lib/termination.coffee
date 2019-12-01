@@ -149,7 +149,7 @@ module.exports =
           default: ''
         fontSize:
           title: 'Font Size'
-          description: 'Override the terminal\'s default font size.'
+          description: 'Override the terminal\'s default font size. **Please enter a pixel integer value only, i.e `6` or `10`**'
           type: 'string'
           default: ''
         defaultPanelHeight:
