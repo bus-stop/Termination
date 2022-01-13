@@ -184,7 +184,8 @@ module.exports =
             'one-dark',
             'one-light',
             'bliss',
-            'gruvbox'
+            'gruvbox',
+            'PowerShell'
           ]
     iconColors:
       type: 'object'
