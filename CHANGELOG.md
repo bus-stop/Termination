@@ -1,3 +1,6 @@
+## 0.7.7
+ * Merge Powershell theme
+
 ## 0.7.6
 * Update node-pty-prebuilt-multiarch dependency
 * Update term.js dependency
